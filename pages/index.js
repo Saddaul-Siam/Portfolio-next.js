@@ -13,18 +13,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeroSection />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
-      <Services />
+      {/* <Services /> */}
     </div>
   );
 }

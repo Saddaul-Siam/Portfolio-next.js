@@ -1,12 +1,16 @@
-import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
+import { Facebook, GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import Vector1 from "../img/Vector1.png";
 import Vector2 from "../img/Vector2.png";
+import crown from "../img/crown.png";
+import thumbup from "../img/thumbup.png";
 import boy from "../img/boy.png";
+import glasses from "../img/glasses.png";
+import glassesimoji from "../img/glassesimoji.png";
 import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto h-[80vh] mt-32 ">
+    <div className="container mx-auto h-[80vh] mt-48">
       <div className="flex-row md:flex mx-5 md:mx-0">
         <div className="flex-1 space-y-7">
           <h2 className="text-5xl font-bold font-lora">Hy! I Am</h2>
@@ -24,6 +28,7 @@ const HeroSection = () => {
           <div className="pt-20 space-x-10">
             <GitHub className="text-orange-400 hover:text-black dark:hover:text-white text-5xl cursor-pointer" />
             <LinkedIn className="text-orange-400 hover:text-blue-500 text-5xl cursor-pointer" />
+            <Facebook className="text-orange-400 hover:text-blue-700 text-5xl cursor-pointer" />
             <Instagram className="text-orange-400 hover:text-pink-600 text-5xl cursor-pointer" />
           </div>
         </div>
@@ -50,8 +55,21 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="blur-3xl w-96 h-80 rounded-full absolute md:-top-20 md:-right-40 bg-pink-200 dark:bg-pink-200/50 z-10"></div>
-          <div className="hidden md:block blur-3xl w-96 h-80 rounded-full absolute -bottom-52 -left-40 bg-cyan-200 dark:bg-cyan-200/50 -z-0"></div>
+          <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute md:-top-20 md:-right-40 bg-pink-200 dark:bg-pink-200/30 z-10"></div>
+          <div className="animate-pulse hidden md:block blur-3xl w-96 h-80 rounded-full absolute -bottom-52 -left-40 bg-cyan-200 dark:bg-cyan-200/30 -z-0"></div>
+
+          <div className="hidden md:block absolute top-14 -left-4 md:-top-20 md:-left-20 ">
+            <Image src={glasses} alt="" className="" />
+            {/* <Image src={glassesimoji} alt="" className="scale-75" /> */}
+          </div>
+          <div className="h-20 w-48 md:h-24 md:w-64 flex justify-start items-center rounded-3xl absolute top-10 -right-4 md:-top-10 md:-right-20 bg-white z-50 ">
+            <Image src={crown} alt="" className="scale-50 " />
+            <span className="text-lg text-gray-600">Web Developer</span>
+          </div>
+          <div className="h-20  w-48 md:h-24 md:w-64 flex justify-start items-center rounded-3xl absolute -bottom-96 left-0 md:-bottom-20 md:-left-14 bg-white z-50 ">
+            <Image src={thumbup} alt="" className="scale-50 " />
+            <span className="text-lg text-gray-600">Web Designer</span>
+          </div>
         </div>
       </div>
     </div>

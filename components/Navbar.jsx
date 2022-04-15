@@ -82,6 +82,7 @@ ScrollTop.propTypes = {
 };
 const Navbar = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [scroll, setScroll] = React.useState(false);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
@@ -177,12 +178,26 @@ const Navbar = (props) => {
       </MenuItem>
     </Menu>
   );
+  React.useEffect(() => {
+    const changeBackground = () => {
+      if (window.scrollY >= 80) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", changeBackground);
+  }, []);
 
   return (
     <React.Fragment>
       <Box sx={{ flexGrow: 1 }}>
         <HideOnScroll {...props}>
-          <AppBar className="dark:bg-gray-900/80 bg-white/80 dark:text-white shadow-none text-black py-3">
+          <AppBar
+            className={`${
+              scroll ? "dark:bg-gray-900/70 bg-white/70" : "bg-transparent"
+            }   dark:text-white shadow-none text-black py-3`}
+          >
             <Box className="container mx-auto">
               <Toolbar className="px-0">
                 <Typography
@@ -254,7 +269,12 @@ const Navbar = (props) => {
         {renderMenu}
       </Box>
       <ScrollTop {...props}>
-        <Fab color="primary" size="small" aria-label="scroll back to top">
+        <Fab
+          color="primary"
+          className="hover:bg-orange-600 bg-orange-400"
+          size="small"
+          aria-label="scroll back to top"
+        >
           <KeyboardArrowUp />
         </Fab>
       </ScrollTop>

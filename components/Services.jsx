@@ -7,7 +7,7 @@ import developer from "../img/developer.svg";
 
 const Services = () => {
   return (
-    <div className="pt-96 md:pt-0 container mx-auto h-[80vh]">
+    <section className="pt-96 md:pt-0 container mx-auto h-[80vh]">
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-3 md:col-span-1 space-y-5 mx-5 mb-10">
           <h2 className="text-5xl font-bold font-lora">My Awesome</h2>
@@ -81,7 +81,7 @@ const Services = () => {
           <div className="hidden dark:block animate-pulse blur-3xl w-96 h-80 rounded-full absolute bottom-40 md:top-48  md:left-[300px] bg-cyan-200 dark:bg-cyan-200/30 z-10"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

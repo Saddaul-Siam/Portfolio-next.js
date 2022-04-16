@@ -1,11 +1,16 @@
 import Head from "next/head";
+import AboutMe from "../components/AboutMe";
+import ContactMe from "../components/ContactMe";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
+import MyProjects from "../components/MyProjects";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
+import SkillsAndExperience from "../components/SkillsAndExperience";
 
 export default function Home() {
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <main className="bg-white dark:bg-gray-900">
       <Head>
         <title>Saddaul Siam</title>
         <meta name="description" content="Saddaul Siam personal portfolio" />
@@ -14,6 +19,11 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Services />
-    </div>
+      <SkillsAndExperience />
+      <AboutMe />
+      <MyProjects />
+      <ContactMe />
+      <Footer />
+    </main>
   );
 }

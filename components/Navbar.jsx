@@ -150,7 +150,7 @@ const Navbar = (props) => {
   }, []);
 
   return (
-    <React.Fragment >
+    <nav>
       <Box sx={{ flexGrow: 1 }} id="backToTop">
         <HideOnScroll {...props}>
           <AppBar
@@ -217,7 +217,7 @@ const Navbar = (props) => {
           <KeyboardArrowUp />
         </Fab>
       </ScrollTop>
-    </React.Fragment>
+    </nav>
   );
 };
 export default Navbar;

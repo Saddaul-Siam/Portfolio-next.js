@@ -6,23 +6,17 @@ import {
   Toolbar,
   IconButton,
   Typography,
-  Badge,
   MenuItem,
   Button,
   Slide,
   Zoom,
   Fab,
 } from "@mui/material";
-import {
-  Menu as MenuIcon,
-  AccountCircle,
-  Mail,
-  Notifications,
-  KeyboardArrowUp,
-} from "@mui/icons-material";
+import { Menu as MenuIcon, KeyboardArrowUp } from "@mui/icons-material";
 import PropTypes from "prop-types";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Toggle from "./Toggle";
+import Link from "next/link";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -52,7 +46,7 @@ function ScrollTop(props) {
 
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      "#home"
+      "#backToTop"
     );
 
     if (anchor) {
@@ -80,52 +74,43 @@ ScrollTop.propTypes = {
   children: PropTypes.element.isRequired,
   window: PropTypes.func,
 };
+
+const NavLinks = [
+  {
+    href: "#",
+    label: "Home",
+  },
+  {
+    href: "#",
+    label: "Services",
+  },
+  {
+    href: "#",
+    label: "Experience",
+  },
+  {
+    href: "#",
+    label: "Protfolio",
+  },
+  {
+    href: "#",
+    label: "Testimonial",
+  },
+];
+
 const Navbar = (props) => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
   const [scroll, setScroll] = React.useState(false);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
   };
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-
-  const menuId = "primary-search-account-menu";
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
 
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
@@ -144,38 +129,13 @@ const Navbar = (props) => {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <Mail />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <Notifications />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
+      {NavLinks.map(({ href, label }, i) => (
+        <Link href={href} key={i} passHref>
+          <MenuItem className="px-8 hover:text-orange-400 font-lora text-lg">
+            <p>{label}</p>
+          </MenuItem>
+        </Link>
+      ))}
     </Menu>
   );
   React.useEffect(() => {
@@ -190,13 +150,13 @@ const Navbar = (props) => {
   }, []);
 
   return (
-    <React.Fragment>
-      <Box sx={{ flexGrow: 1 }}>
+    <React.Fragment >
+      <Box sx={{ flexGrow: 1 }} id="backToTop">
         <HideOnScroll {...props}>
           <AppBar
             className={`${
-              scroll ? "dark:bg-gray-900/70 bg-white/70" : "bg-transparent"
-            }   dark:text-white shadow-none text-black py-3`}
+              scroll ? "dark:bg-gray-900/70 bg-white/30" : "bg-transparent"
+            } backdrop-blur-md dark:text-white text-black shadow-none py-3`}
           >
             <Box className="container mx-auto">
               <Toolbar className="px-0">
@@ -212,36 +172,16 @@ const Navbar = (props) => {
                 </Box>
                 <Box sx={{ flexGrow: 5 }} />
                 <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                  <Typography
-                    variant="body2"
-                    className="px-3 hover:text-orange-400 cursor-pointer font-lora text-lg"
-                  >
-                    Home
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    className="px-3 hover:text-orange-400 cursor-pointer font-lora text-lg"
-                  >
-                    Serivces
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    className="px-3 hover:text-orange-400 cursor-pointer font-lora text-lg"
-                  >
-                    Experience
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    className="px-3 hover:text-orange-400 cursor-pointer font-lora text-lg"
-                  >
-                    Protfolio
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    className="px-3 hover:text-orange-400 cursor-pointer font-lora text-lg"
-                  >
-                    Testimonial
-                  </Typography>
+                  {NavLinks.map(({ href, label }, i) => (
+                    <Link href={href} key={i} passHref>
+                      <Typography
+                        variant="body2"
+                        className="px-3 hover:text-orange-400 cursor-pointer font-lora text-lg"
+                      >
+                        {label}
+                      </Typography>
+                    </Link>
+                  ))}
                 </Box>
                 <Box sx={{ flexGrow: 1 }} />
                 <Box sx={{ display: { xs: "none", md: "flex" } }}>
@@ -266,7 +206,6 @@ const Navbar = (props) => {
           </AppBar>
         </HideOnScroll>
         {renderMobileMenu}
-        {renderMenu}
       </Box>
       <ScrollTop {...props}>
         <Fab

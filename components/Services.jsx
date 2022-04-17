@@ -7,7 +7,10 @@ import developer from "../img/developer.svg";
 
 const Services = () => {
   return (
-    <section className="pt-96 md:pt-1 scroll-mt-40 container mx-auto md:h-[90vh] scroll-smooth" id="services">
+    <section
+      className="pt-96 md:pt-1 scroll-mt-40 container mx-auto md:h-[90vh] scroll-smooth"
+      id="services"
+    >
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-3 md:col-span-1 space-y-5 mx-5 mb-10">
           <h2 className="text-5xl font-bold font-lora">My Awesome</h2>
@@ -77,8 +80,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="block dark:hidden animate-pulse blur-3xl w-96 h-80 rounded-full absolute top-40  md:top-48  md:left-[300px] bg-pink-200 dark:bg-pink-200/30 -z-10 md:z-10"></div>
-          <div className="hidden dark:block animate-pulse blur-3xl w-96 h-80 rounded-full absolute bottom-40 md:top-48  md:left-[300px] bg-cyan-200 dark:bg-cyan-200/30 z-10"></div>
+          <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute bottom-40 md:top-48  md:left-[300px] bg-pink-200/50 md:bg-pink-200 dark:bg-cyan-200/30 z-10"></div>
         </div>
       </div>
     </section>

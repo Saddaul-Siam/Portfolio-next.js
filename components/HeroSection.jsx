@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <header className="container mx-auto h-[80vh] mt-48" >
+    <header className="container mx-auto h-[80vh] mt-28 md:mt-48">
       <div className="flex-row md:flex mx-5 md:mx-0">
         <div className="flex-1 space-y-7">
           <h2 className="text-5xl font-bold font-lora">Hy! I Am</h2>
@@ -54,7 +54,7 @@ const HeroSection = () => {
               />
             </div>
           </div>
-
+          {/* blur div */}
           <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute md:-top-20 md:-right-40 bg-pink-200 dark:bg-pink-200/30 z-10"></div>
           <div className="animate-pulse hidden md:block blur-3xl w-96 h-80 rounded-full absolute -bottom-52 -left-40 bg-cyan-200 dark:bg-cyan-200/30 -z-0"></div>
 

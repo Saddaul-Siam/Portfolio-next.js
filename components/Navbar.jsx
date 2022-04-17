@@ -93,7 +93,7 @@ const NavLinks = [
     label: "Protfolio",
   },
   {
-    href: "#",
+    href: "#aboutMe",
     label: "Testimonial",
   },
 ];

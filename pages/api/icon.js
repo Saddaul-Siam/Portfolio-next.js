@@ -25,6 +25,10 @@ export default function handler(req, res) {
     { title: "api", img: "https://i.ibb.co/gv05YYb/api.png" },
     { title: "redux", img: "https://i.ibb.co/8mb4nn6/redux.png" },
     { title: "firebase", img: "https://i.ibb.co/D5g2LZN/firebase.jpg" },
+    {
+      title: "Sanity",
+      img: "https://pics.freeicons.io/uploads/icons/png/17521277461551942823-512.png",
+    },
     { title: "Socket.io", img: "https://i.ibb.co/fQMRZZ1/socket-io.png" },
     { title: "figma", img: "https://i.ibb.co/C5pjWmt/figma.png" },
     { title: "material UI", img: "https://i.ibb.co/sCnrMCb/mu5.png" },
@@ -32,6 +36,5 @@ export default function handler(req, res) {
     { title: "tailwind", img: "https://i.ibb.co/svS976q/tailwind.jpg" },
     { title: "git", img: "https://i.ibb.co/DtvtppX/git.png" },
     { title: "photoshop", img: "https://i.ibb.co/VSVQXvh/photoshop.png" },
-    { title: "shop", img: "https://i.ibb.co/VSVQXvh/photoshop.png" },
   ]);
 }

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const AboutMe = () => {
   return (
-    <section>
+    <section className="scroll-mt-40">
       <h2>About Me</h2>
     </section>
   );

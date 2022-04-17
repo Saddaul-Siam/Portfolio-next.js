@@ -81,11 +81,11 @@ const NavLinks = [
     label: "Home",
   },
   {
-    href: "#",
+    href: "#services",
     label: "Services",
   },
   {
-    href: "#",
+    href: "#skills",
     label: "Experience",
   },
   {

@@ -7,12 +7,12 @@ import developer from "../img/developer.svg";
 
 const Services = () => {
   return (
-    <section className="pt-96 md:pt-0 container mx-auto h-[80vh]">
+    <section className="pt-96 md:pt-1 scroll-mt-40 container mx-auto md:h-[90vh] scroll-smooth" id="services">
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-3 md:col-span-1 space-y-5 mx-5 mb-10">
           <h2 className="text-5xl font-bold font-lora">My Awesome</h2>
           <h2 className="text-5xl font-bold font-lora text-orange-400">
-            services
+            Services
           </h2>
           <p className="text-md text-gray-600 dark:text-gray-400 font-medium">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ipsam

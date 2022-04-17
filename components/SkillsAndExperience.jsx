@@ -10,7 +10,7 @@ const SkillsAndExperience = () => {
   }, []);
   return (
     <section
-      className="h-[90vh] w-screen container mx-auto pt-[50rem] md:pt-5 scroll-mt-40 px-5 relative"
+      className="h-[90vh] w-screen container mx-auto pt-[50rem] md:pt-5 scroll-mt-20 px-5 relative"
       id="skills"
     >
       <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center">

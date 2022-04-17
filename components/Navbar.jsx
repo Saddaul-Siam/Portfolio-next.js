@@ -155,7 +155,7 @@ const Navbar = (props) => {
         <HideOnScroll {...props}>
           <AppBar
             className={`${
-              scroll ? "dark:bg-gray-900/70 bg-white/30" : "dark:bg-gray-900 bg-white"
+              scroll ? "bg-white/30 dark:bg-gray-900/70" : "bg-white dark:bg-gray-900 "
             } backdrop-blur-md dark:text-white text-black shadow-none py-3`}
           >
             <Box className="container mx-auto">

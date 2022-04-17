@@ -154,9 +154,9 @@ const Navbar = (props) => {
       <Box sx={{ flexGrow: 1 }} id="backToTop">
         <HideOnScroll {...props}>
           <AppBar
-            className={`${
-              scroll ? "bg-white/30 dark:bg-gray-900/70" : "bg-white dark:bg-gray-900 "
-            } backdrop-blur-md dark:text-white text-black shadow-none py-3`}
+            className={`${scroll ? "bg-white/30" : "bg-white"} ${
+              scroll ? "dark:bg-gray-900/70" : "dark:bg-gray-900 "
+            }backdrop-blur-md dark:text-white text-black shadow-none py-3`}
           >
             <Box className="container mx-auto">
               <Toolbar className="px-0">

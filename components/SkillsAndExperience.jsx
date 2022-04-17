@@ -2,12 +2,49 @@ import React, { useEffect, useState } from "react";
 import SkillsIcons from "./SkillsIcons";
 
 const SkillsAndExperience = () => {
-  const [skills, setSkills] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3000/api/icon")
-      .then((res) => res.json())
-      .then((data) => setSkills(data));
-  }, []);
+  const [skills, setSkills] = useState([
+    { title: "html", img: "https://i.ibb.co/nBcbjxk/html.png" },
+    { title: "css", img: "https://i.ibb.co/2gzBM6W/css.png" },
+    { title: "javascript", img: "https://i.ibb.co/JqLRRHC/javascript.png" },
+    {
+      title: "typescript",
+      img: "https://pics.freeicons.io/uploads/icons/png/14678610731551953708-512.png",
+    },
+    {
+      title: "react",
+      img: "https://pics.freeicons.io/uploads/icons/png/20167174151551942641-512.png",
+    },
+    {
+      title: "next.js",
+      img: "https://i.ibb.co/hLLFDgS/nextjs-boilerplate-logo.png",
+    },
+    { title: "node", img: "https://i.ibb.co/8XKBGTV/node.png" },
+    {
+      title: "express",
+      img: "https://pics.freeicons.io/uploads/icons/png/8416740941580802960-512.png",
+    },
+    { title: "mongodb", img: "https://i.ibb.co/2Sg8QBm/mongodb.png" },
+    { title: "mongoose", img: "https://i.ibb.co/m0XpLGp/mongoose.png" },
+    { title: "api", img: "https://i.ibb.co/gv05YYb/api.png" },
+    { title: "redux", img: "https://i.ibb.co/8mb4nn6/redux.png" },
+    { title: "firebase", img: "https://i.ibb.co/D5g2LZN/firebase.jpg" },
+    {
+      title: "Sanity",
+      img: "https://pics.freeicons.io/uploads/icons/png/17521277461551942823-512.png",
+    },
+    { title: "Socket.io", img: "https://i.ibb.co/fQMRZZ1/socket-io.png" },
+    { title: "figma", img: "https://i.ibb.co/C5pjWmt/figma.png" },
+    { title: "material UI", img: "https://i.ibb.co/sCnrMCb/mu5.png" },
+    { title: "bootstrap", img: "https://i.ibb.co/ch2vc83/bootstrap.png" },
+    { title: "tailwind", img: "https://i.ibb.co/svS976q/tailwind.jpg" },
+    { title: "git", img: "https://i.ibb.co/DtvtppX/git.png" },
+    { title: "photoshop", img: "https://i.ibb.co/VSVQXvh/photoshop.png" },
+  ]);
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/api/icon")
+  //     .then((res) => res.json())
+  //     .then((data) => setSkills(data));
+  // }, []);
   return (
     <section
       className="h-screen w-screen container mx-auto pt-[50rem] md:pt-5 scroll-mt-20 px-5 relative"

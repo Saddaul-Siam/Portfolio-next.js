@@ -8,7 +8,7 @@ import developer from "../img/developer.svg";
 const Services = () => {
   return (
     <section
-      className="pt-96 md:pt-1 scroll-mt-40 container mx-auto md:h-[90vh] scroll-smooth"
+      className="pt-96 md:pt-1 -scroll-mt-60 md:scroll-mt-40 container mx-auto md:h-[90vh]"
       id="services"
     >
       <div className="grid grid-cols-3 gap-4">

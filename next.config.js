@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ["i.ibb.co", "pics.freeicons.io"],
+    domains: ["i.ibb.co", "pics.freeicons.io", "tailwindcss.com"],
   },
 };

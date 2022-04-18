@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import {
   Menu,
   AppBar,
@@ -15,7 +15,6 @@ import {
 import { Menu as MenuIcon, KeyboardArrowUp } from "@mui/icons-material";
 import PropTypes from "prop-types";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Toggle from "./Toggle";
 import Link from "next/link";
 
 function HideOnScroll(props) {
@@ -131,7 +130,7 @@ const Navbar = (props) => {
     >
       {NavLinks.map(({ href, label }, i) => (
         <Link href={href} key={i} passHref>
-          <MenuItem className="px-8 hover:text-orange-400 font-lora text-lg">
+          <MenuItem classNameName="px-8 hover:text-orange-400 font-lora text-lg">
             <p>{label}</p>
           </MenuItem>
         </Link>
@@ -154,20 +153,20 @@ const Navbar = (props) => {
       <Box sx={{ flexGrow: 1 }} id="backToTop">
         <HideOnScroll {...props}>
           <AppBar
-            className={`${scroll ? "bg-white/30" : "bg-white"} ${
+            classNameName={`${scroll ? "bg-white/30" : "bg-white"} ${
               scroll ? "dark:bg-gray-900/70" : "dark:bg-gray-900 "
             }backdrop-blur-md dark:text-white text-black shadow-none py-3`}
           >
-            <Box className="container mx-auto">
-              <Toolbar className="px-0">
+            <Box classNameName="container mx-auto">
+              <Toolbar classNameName="px-0">
                 <Typography
                   noWrap
                   component="div"
-                  className="normal-case text-xl font-bold"
+                  classNameName="normal-case text-xl font-bold"
                 >
                   Saddaul Siam
                 </Typography>
-                <Box className="pl-5">
+                <Box classNameName="pl-5">
                   <Toggle />
                 </Box>
                 <Box sx={{ flexGrow: 5 }} />
@@ -176,7 +175,7 @@ const Navbar = (props) => {
                     <Link href={href} key={i} passHref>
                       <Typography
                         variant="body2"
-                        className="px-3 hover:text-orange-400 cursor-pointer font-lora text-lg"
+                        classNameName="px-3 hover:text-orange-400 cursor-pointer font-lora text-lg"
                       >
                         {label}
                       </Typography>
@@ -185,7 +184,7 @@ const Navbar = (props) => {
                 </Box>
                 <Box sx={{ flexGrow: 1 }} />
                 <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                  <Button color="inherit" className="button">
+                  <Button color="inherit" classNameName="button">
                     Contact
                   </Button>
                 </Box>
@@ -210,7 +209,7 @@ const Navbar = (props) => {
       <ScrollTop {...props}>
         <Fab
           color="primary"
-          className="hover:bg-orange-600 bg-orange-400"
+          classNameName="hover:bg-orange-600 bg-orange-400"
           size="small"
           aria-label="scroll back to top"
         >
@@ -221,3 +220,89 @@ const Navbar = (props) => {
   );
 };
 export default Navbar;
+ */
+
+import React, { useState } from "react";
+import Toggle from "./Toggle";
+
+const Nav = () => {
+  const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+  React.useEffect(() => {
+    const changeBackground = () => {
+      if (window.scrollY >= 80) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", changeBackground);
+  }, []);
+  const NavLinks = [
+    {
+      href: "#",
+      label: "Home",
+    },
+    {
+      href: "#services",
+      label: "Services",
+    },
+    {
+      href: "#skills",
+      label: "Experience",
+    },
+    {
+      href: "#",
+      label: "Protfolio",
+    },
+    {
+      href: "#aboutMe",
+      label: "Testimonial",
+    },
+  ];
+  return (
+    <nav
+      className={`w-full fixed top-0 left-0 dark:text-white ${
+        scroll ? "dark:bg-gray-900/80 bg-white/80" : "bg-transparent"
+      } backdrop-blur-md py-2 z-[1000]`}
+    >
+      <div className="md:flex items-center justify-between py-4 px-7 md:px-0 md:container mx-auto">
+        <div className="font-bold text-2xl cursor-pointer flex items-center dark:text-white">
+          Saddaul Siam
+          <span className="pl-5">
+            <Toggle />
+          </span>
+        </div>
+
+        <div
+          onClick={() => setOpen(!open)}
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+        >
+          {open ? "x" : "="}
+        </div>
+
+        <ul
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static  left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            open
+              ? "top-16 dark:bg-gray-900 bg-white"
+              : "top-[-490px] bg-transparent"
+          }`}
+        >
+          {NavLinks.map((link) => (
+            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+              <a
+                href={link.href}
+                className="text-gray-900 dark:text-white hover:text-orange-400 duration-500"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+          <button className="button ml-32">Contact</button>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Nav;

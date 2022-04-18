@@ -25,7 +25,6 @@ const Services = () => {
           <div>
             <a
               href="https://drive.google.com/file/d/1qDzW2iLWnxXM2Md9tFw20WdZftirnA0s/view"
-              passHref
               target="_blank"
               rel="noopener noreferrer"
             >

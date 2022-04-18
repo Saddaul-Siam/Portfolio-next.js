@@ -289,8 +289,9 @@ const Nav = () => {
           }`}
         >
           {NavLinks.map((link) => (
-            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+            <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7">
               <a
+                // passHref
                 href={link.href}
                 className="text-gray-900 dark:text-white hover:text-orange-400 duration-500"
               >

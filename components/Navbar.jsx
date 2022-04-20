@@ -263,7 +263,7 @@ const Nav = () => {
   return (
     <nav
       className={`w-full fixed top-0 left-0 dark:text-white ${
-        scroll ? "dark:bg-gray-900/80 bg-white/80" : "bg-transparent"
+        scroll ? "dark:bg-gray-900/80 bg-white/80 shadow-sm" : "bg-transparent"
       } backdrop-blur-md py-2 z-[1000]`}
     >
       <div className="md:flex items-center justify-between py-4 px-7 md:px-0 md:container mx-auto">

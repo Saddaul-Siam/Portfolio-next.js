@@ -1,16 +1,17 @@
 import Image from "next/image";
 import React from "react";
 import img from "../img/aboutMe1.png";
-import img2 from "../img/aboutMe2.png";
-import img3 from "../img/aboutMe3.png";
 
 const AboutMe = () => {
   return (
-    <section className="h-[90vh] w-full container mx-auto" id="aboutMe">
+    <section
+      className="h-[90vh] w-full container mx-auto relative pt-[65rem] md:pt-0 px-5 md:px-0"
+      id="aboutMe"
+    >
       <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center pt-10 md:pt-0">
         About Me
       </h2>
-      <div className="grid grid-cols-2 pt-24">
+      <div className="grid grid-cols-2 gap-y-10 pt-24">
         <div className="col-span-2 md:col-span-1 flex justify-center">
           <Image
             className="object-cover"
@@ -34,10 +35,17 @@ const AboutMe = () => {
             JavaScript ReactJS
           </p>
           <div className="pt-10">
-            <button className="button">Download Resume</button>
+            <a
+              href="https://drive.google.com/file/d/1qDzW2iLWnxXM2Md9tFw20WdZftirnA0s/view"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="button">Download Resume</button>
+            </a>
           </div>
         </div>
       </div>
+      <div className="hidden md:block bottom-56 right-0 dark:block animate-pulse blur-3xl w-96 h-80 rounded-full absolute dark:bg-pink-200/30 bg-cyan-200/50 z-0"></div>
     </section>
   );
 };

@@ -22,7 +22,7 @@ const Services = () => {
             impedit in, sapiente laudantium, totam placeat iste excepturi labore
             tenetur repellat consectetur
           </p>
-          <div>
+          <div className='pt-10'>
             <a
               href="https://drive.google.com/file/d/1qDzW2iLWnxXM2Md9tFw20WdZftirnA0s/view"
               target="_blank"

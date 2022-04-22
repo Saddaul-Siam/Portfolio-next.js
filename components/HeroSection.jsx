@@ -1,4 +1,3 @@
-import { Facebook, GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import Vector1 from "../img/Vector1.png";
 import Vector2 from "../img/Vector2.png";
 import crown from "../img/crown.png";
@@ -7,6 +6,12 @@ import boy from "../img/boy.png";
 import glasses from "../img/glasses.png";
 import glassesimoji from "../img/glassesimoji.png";
 import Image from "next/image";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -25,11 +30,11 @@ const HeroSection = () => {
             Hire me
           </button>
           {/* social icons */}
-          <div className="pt-20 space-x-10">
-            <GitHub className="text-orange-400 hover:text-black dark:hover:text-white text-5xl cursor-pointer" />
-            <LinkedIn className="text-orange-400 hover:text-blue-500 text-5xl cursor-pointer" />
-            <Facebook className="text-orange-400 hover:text-blue-700 text-5xl cursor-pointer" />
-            <Instagram className="text-orange-400 hover:text-pink-600 text-5xl cursor-pointer" />
+          <div className="pt-20 flex space-x-10">
+            <FaGithub className="text-orange-400 hover:text-black dark:hover:text-white text-5xl cursor-pointer" />
+            <FaLinkedin className="text-orange-400 hover:text-blue-500 text-5xl cursor-pointer" />
+            <FaFacebookSquare className="text-orange-400 hover:text-blue-700 text-5xl cursor-pointer" />
+            <FaInstagramSquare className="text-orange-400 hover:text-pink-600 text-5xl cursor-pointer" />
           </div>
         </div>
         <div className="flex-1 relative pt-32 md:pt-0">

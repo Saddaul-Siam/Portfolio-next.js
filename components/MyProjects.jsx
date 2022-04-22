@@ -3,8 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import { EffectCoverflow, Pagination } from "swiper";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import Image from "next/image";
 
 const Testimonials = () => {
@@ -58,8 +59,6 @@ const Testimonials = () => {
         }}
         effect={"coverflow"}
         grabCursor={true}
-        // centeredSlides={true}
-        // loop={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -74,7 +73,7 @@ const Testimonials = () => {
         }}
         navigation={true}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"
       >
         {data.map((item, key) => (
@@ -83,21 +82,21 @@ const Testimonials = () => {
             style={{
               backgroundPosition: "center",
               backgroundSize: "cover",
-              width: "630px",
+              width: "580px",
               height: "520px",
-              padding: 10,
-              margin: 10,
+              padding: 0,
+              margin: 0,
             }}
           >
-            {/* <div className=" "> */}
-            <Image
-              className="object-cover rounded-2xl w-full"
-              width={580}
-              height={360}
-              src={item.image}
-              alt=""
-            />
-            {/* </div> */}
+            <div className=" ">
+              <Image
+                className="object-cover rounded-2xl w-full"
+                width={580}
+                height={360}
+                src={item.image}
+                alt=""
+              />{" "}
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -28,8 +28,8 @@ const Nav = () => {
       label: "Experience",
     },
     {
-      href: "#",
-      label: "Protfolio",
+      href: "#portfolio",
+      label: "Portfolio",
     },
     {
       href: "#aboutMe",

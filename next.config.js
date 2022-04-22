@@ -1,5 +1,10 @@
 module.exports = {
   images: {
-    domains: ["i.ibb.co", "pics.freeicons.io", "tailwindcss.com"],
+    domains: [
+      "i.ibb.co",
+      "pics.freeicons.io",
+      "tailwindcss.com",
+      "swiperjs.com",
+    ],
   },
 };

@@ -21,10 +21,10 @@ export default function Home() {
       <Services />
       <SkillsAndExperience />
       <AboutMe />
-      {/*
       <MyProjects />
+      {/*
       <ContactMe />
-      <Footer /> 
+      <Footer />
       */}
     </main>
   );

@@ -10,7 +10,7 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaLinkedin,
-  FaGithub,
+  FaGithubSquare,
 } from "react-icons/fa";
 
 const HeroSection = () => {
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </button>
           {/* social icons */}
           <div className="pt-20 flex space-x-10">
-            <FaGithub className="text-orange-400 hover:text-black dark:hover:text-white text-5xl cursor-pointer" />
+            <FaGithubSquare className="text-orange-400 hover:text-black dark:hover:text-white text-5xl cursor-pointer" />
             <FaLinkedin className="text-orange-400 hover:text-blue-500 text-5xl cursor-pointer" />
             <FaFacebookSquare className="text-orange-400 hover:text-blue-700 text-5xl cursor-pointer" />
             <FaInstagramSquare className="text-orange-400 hover:text-pink-600 text-5xl cursor-pointer" />

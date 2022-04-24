@@ -3,16 +3,37 @@ import Toggle from "./Toggle";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
-  const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState(null);
+  const [scrollUp, setScrollUp] = useState(null);
+  const [scrollDown, setScrollDown] = useState(null);
+
   React.useEffect(() => {
-    const changeBackground = () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY >= 80) {
         setScroll(true);
       } else {
         setScroll(false);
       }
-    };
-    window.addEventListener("scroll", changeBackground);
+    });
+
+    let lastScroll = 0;
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= 0) {
+        setScrollDown(false);
+        return;
+      } else if (lastScroll === 200) {
+        if (currentScroll > lastScroll) {
+          setScrollUp(false);
+          setScrollDown(true);
+        }
+      } else if (currentScroll < lastScroll) {
+        setScrollUp(true);
+        setScrollDown(false);
+      }
+      lastScroll = currentScroll;
+      console.log(lastScroll);
+    });
   }, []);
   const NavLinks = [
     {
@@ -38,9 +59,12 @@ const Nav = () => {
   ];
   return (
     <nav
+      id="header"
       className={`w-full fixed top-0 left-0 dark:text-white ${
-        scroll ? "dark:bg-gray-900/80 bg-white/80 shadow-sm" : "bg-transparent"
-      } backdrop-blur-md py-2 z-[1000]`}
+        scroll ? "dark:bg-gray-900/80 bg-white/50 shadow-sm" : "bg-transparent"
+      } backdrop-blur-md py-2 z-[1000] ${scrollDown ? "hidden" : ""}${
+        scrollUp ? "block" : ""
+      }`}
     >
       <div className="md:flex items-center justify-between py-4 px-7 md:px-0 md:container mx-auto">
         <div className="font-bold text-2xl cursor-pointer flex items-center dark:text-white">

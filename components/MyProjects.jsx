@@ -1,159 +1,146 @@
-import Image from "next/image";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper";
-
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import PhoneSlider from "./subCompo/PhoneSlider";
+import WebSlider from "./subCompo/WebSlider";
 
 const Testimonials = () => {
   const data = [
     {
-      image: "https://swiperjs.com/demos/images/nature-1.jpg",
-      name: "Name 1",
-      testimony:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nisi lobortis, efficitur libero vel, consequat ipsum. Donec venenatis tortor non rhoncus aliquam. Donec hendrerit justo ac tortor accumsan, nec volutpat tortor scelerisque. ",
+      image: "https://i.ibb.co/SwtGj3b/project1.png",
+      name: "Honda CBR",
+      testimonials: [
+        "This is a single-page website. (only client site)",
+        "This is a bike-selling website.",
+        "e-commerce Website",
+      ],
+      technology: ["HTML", "CSS", "Bootstrap"],
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-2.jpg",
-      name: "Name 2",
-      testimony:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nisi lobortis, efficitur libero vel, consequat ipsum. Donec venenatis tortor non rhoncus aliquam. Donec hendrerit justo ac tortor accumsan, nec volutpat tortor scelerisque. ",
+      image: "https://i.ibb.co/8PhD1T3/project2.png",
+      name: " Responsive Football Website",
+      testimonials: [
+        "This is a single-page website. (only client site)",
+        "Football news sharing website",
+        "Sports website",
+      ],
+      technology: ["HTML", "CSS", "Bootstrap"],
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-3.jpg",
-      name: "Name 3",
-      testimony:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nisi lobortis, efficitur libero vel, consequat ipsum. Donec venenatis tortor non rhoncus aliquam. Donec hendrerit justo ac tortor accumsan, nec volutpat tortor scelerisque. ",
+      image: "https://i.ibb.co/5ThXVCY/Untitled-2.png",
+      name: " Siam Store (e-commerce Website)",
+      testimonials: [
+        "This is a single-page website. (only client site)",
+        "Simple javascript website",
+        "e-commerce Website",
+      ],
+      technology: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-4.jpg",
-      name: "Name 4",
-      testimony:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nisi lobortis, efficitur libero vel, consequat ipsum. Donec venenatis tortor non rhoncus aliquam. Donec hendrerit justo ac tortor accumsan, nec volutpat tortor scelerisque. ",
+      image: "https://i.ibb.co/WzK9HqM/project5.png",
+      name: " Easy School (educational Website)",
+      testimonials: [
+        " This is a single-page website. (only client site)",
+        "   Simple React website",
+        "  Online learning website",
+      ],
+      technology: ["React", "Bootstrap"],
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-5.jpg",
-      name: "Name 5",
-      testimony:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nisi lobortis, efficitur libero vel, consequat ipsum. Donec venenatis tortor non rhoncus aliquam. Donec hendrerit justo ac tortor accumsan, nec volutpat tortor scelerisque. ",
+      image: "https://i.ibb.co/XSN7cJz/project8.png",
+      name: " Pro medical (healthcare-website.)",
+      testimonials: [
+        "This is a single-page website. (only client site)",
+        "Pro medical is online hospital",
+        "Users need to log in via Google (also can create a new account)",
+      ],
+      technology: ["React", "React Router", "Bootstrap", "Firebase"],
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-6.jpg",
-      name: "Name 6",
-      testimony:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nisi lobortis, efficitur libero vel, consequat ipsum. Donec venenatis tortor non rhoncus aliquam. Donec hendrerit justo ac tortor accumsan, nec volutpat tortor scelerisque. ",
+      image: "https://i.ibb.co/VthncpG/project7.png",
+      name: "Tour Planners (Tourism Website)",
+      testimonials: [
+        "This is a full-stack Tour-Planner booking website.",
+        "  Users can be booking tours",
+        " Users need to log in via Google (also can create a new account)",
+        " Have admin and user dashboard. Admin can delete, add, manage services.",
+      ],
+      technology: [
+        "React",
+        "React Router",
+        "Bootstrap",
+        "Firebase",
+        "Nodejs",
+        "Mongodb",
+      ],
+    },
+    {
+      image: "https://i.ibb.co/ChJDNkv/project9.png",
+      name: "Bike Buzz (e-commerce Website)",
+      testimonials: [
+        "This is a full-stack bike-selling website.",
+        "Users can order bikes and need to cancel orders",
+        "Users need to log in via Google (also can create a new account)",
+        "Have admin and user dashboard. Admin can delete, add, manage services.",
+      ],
+      technology: [
+        "React",
+        "React Router",
+        "MaterialUI",
+        "Firebase",
+        "Nodejs",
+        "Mongodb",
+      ],
+    },
+    {
+      image: "https://i.ibb.co/QMh2KVs/project6.png",
+      name: "Doctors Portal",
+      testimonials: [
+        " This is a full-stack Doctors website.",
+        "Users can booking a Appointments",
+        "Users need to log in via Google (also can create a new account)",
+        "Have admin and user dashboard. Admin can delete, add, manage services.",
+      ],
+      technology: [
+        "React",
+        "React Router",
+        "Material UI",
+        "Firebase",
+        "Nodejs",
+        "Mongodb",
+      ],
+    },
+    {
+      image: "https://i.ibb.co/XLHCYMD/project11.png",
+      name: " Jerins Parlour",
+      testimonials: [
+        "  This is a full-stack Parlour website.",
+        "Users need to booking a services and cancel services",
+        "Users can log in via Google (also can create a new account)",
+        " Have admin and user dashboard. Admin can delete, add, manage services.",
+      ],
+      technology: [
+        "React",
+        "React Router",
+        "Material UI",
+        "Firebase",
+        "Nodejs",
+        "Mongodb",
+      ],
     },
   ];
 
   return (
-    <section id="portfolio" className="pb-32 pt-[70rem] md:pt-0">
+    <section
+      id="portfolio"
+      className="h-screen bg-gray-100 dark:bg-gray-800/30 pb-32 pt-[70rem] md:pt-0 md:scroll-mt-20"
+    >
+      <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center py-20 ">
+        My Resent Projects
+      </h2>
       <div className="hidden md:block">
-        <Swiper
-          style={{
-            padding: 50,
-            width: "100%",
-            paddingTop: "50px",
-            paddingBottom: " 50px",
-          }}
-          effect={"coverflow"}
-          grabCursor={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          navigation={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-          className="mySwiper"
-        >
-          {data.map((item, key) => (
-            <SwiperSlide
-              key={key}
-              className="swiperSlide"
-              style={{
-                width: "580px",
-                height: "520px",
-              }}
-            >
-              <div className=" ">
-                <Image
-                  className="object-cover rounded-2xl w-full"
-                  width={580}
-                  height={360}
-                  src={item.image}
-                  alt=""
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <WebSlider data={data} />
       </div>
-
       {/* Phone */}
-
       <div className="md:hidden">
-        <Swiper
-          style={{
-            padding: 50,
-            width: "100%",
-            paddingTop: "50px",
-            paddingBottom: " 50px",
-          }}
-          effect={"coverflow"}
-          grabCursor={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          // slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          navigation={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-          className="mySwiper"
-        >
-          {data.map((item, key) => (
-            <SwiperSlide
-              key={key}
-              className="swiperSlide"
-              style={{
-                width: "350px",
-                height: "500px",
-              }}
-            >
-              <div className=" ">
-                <Image
-                  className="object-cover rounded-2xl w-full"
-                  width={580}
-                  height={360}
-                  src={item.image}
-                  alt=""
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <PhoneSlider data={data} />
       </div>
     </section>
   );

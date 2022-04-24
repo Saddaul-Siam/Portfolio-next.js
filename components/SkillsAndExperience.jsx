@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import SkillsIcons from "./SkillsIcons";
+import SkillsIcons from "./subCompo/SkillsIcons";
 
 const SkillsAndExperience = () => {
   const [skills, setSkills] = useState([

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Toggle from "./Toggle";
+import Toggle from "./subCompo/Toggle";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -23,7 +23,7 @@ const Nav = () => {
         setScrollDown(false);
         return;
       } else if (currentScroll > lastScroll) {
-        if (lastScroll > 200) {
+        if (lastScroll > 250) {
           setScrollUp(false);
           setScrollDown(true);
         }
@@ -58,7 +58,6 @@ const Nav = () => {
   ];
   return (
     <nav
-      id="header"
       className={`w-full fixed top-0 left-0 dark:text-white ${
         scroll ? "dark:bg-gray-900/80 bg-white/50 shadow-sm" : "bg-transparent"
       } backdrop-blur-md py-2 z-[1000] ${scrollDown ? "hidden" : ""}${

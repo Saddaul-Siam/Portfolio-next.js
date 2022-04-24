@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,7 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const WebSlider = ({ data }) => {
-  const { systemTheme, theme, setTheme } = useTheme();
+  const { systemTheme, theme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
   return (
     <Swiper
@@ -19,6 +20,7 @@ const WebSlider = ({ data }) => {
         width: "100%",
         paddingTop: "50px",
         paddingBottom: " 50px",
+        // cursor: "pointer",
       }}
       effect={"coverflow"}
       grabCursor={true}
@@ -39,16 +41,15 @@ const WebSlider = ({ data }) => {
         clickable: true,
       }}
       modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-      className="mySwiper"
     >
       {data
-        .map(({ image, name, testimonials, technology }, key) => (
+        .map(({ image, name, testimonials, technology, links }) => (
           <SwiperSlide
-            key={key}
+            key={name}
             className="swiperSlide"
             style={{
               width: "580px",
-              height: "520px",
+              height: "650px",
               background: `${currentTheme === "dark" ? "#1e293b" : "white"}`,
               padding: "15px",
               borderRadius: "20px",
@@ -62,19 +63,41 @@ const WebSlider = ({ data }) => {
               src={image}
               alt=""
             />
-            <div className="bg-red-100">
-              <p>
-                technology :
+            <div className="bg-red-00">
+              <div className="py-4 flex flex-wrap">
                 {technology.map((techno, key) => (
-                  <span key={key}> {techno}</span>
+                  <div
+                    key={key + "key"}
+                    className={`${techno?.bg} text-white py-1 px-3 rounded-3xl mx-0.5 font-lora`}
+                  >
+                    {techno?.title}
+                  </div>
                 ))}
-              </p>
-              <h2>{name}</h2>
-              {testimonials.map((testimonial, key) => (
-                <p key={key} className="">
-                  {testimonial}
-                </p>
-              ))}
+              </div>
+              <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                {name}
+              </h2>
+              <div className="pt-4">
+                {testimonials.map((testimonial, key) => (
+                  <p
+                    key={key}
+                    className="pb-2 text-gray-800 dark:text-gray-300"
+                  >
+                    {testimonial}
+                  </p>
+                ))}
+              </div>
+              <div className="pt-1 space-x-1">
+                {links.map(({ title, link, bg, shadow }, key) => (
+                  <Link href={link} passHref key={key}>
+                    <button
+                      className={`py-1 px-3 rounded-3xl text-white ${bg} ${shadow}`}
+                    >
+                      {title}
+                    </button>
+                  </Link>
+                ))}
+              </div>
             </div>
           </SwiperSlide>
         ))

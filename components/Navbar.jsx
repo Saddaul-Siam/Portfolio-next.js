@@ -22,19 +22,16 @@ const Nav = () => {
       if (currentScroll <= 0) {
         setScrollDown(false);
         return;
-      }
-      // else if (lastScroll === 200) {
-      else if (currentScroll > lastScroll) {
-        setScrollUp(false);
-        setScrollDown(true);
-      }
-      // }
-      else if (currentScroll < lastScroll) {
+      } else if (currentScroll > lastScroll) {
+        if (lastScroll > 200) {
+          setScrollUp(false);
+          setScrollDown(true);
+        }
+      } else if (currentScroll < lastScroll) {
         setScrollUp(true);
         setScrollDown(false);
       }
       lastScroll = currentScroll;
-      console.log(lastScroll);
     });
   }, []);
   const NavLinks = [

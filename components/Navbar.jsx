@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Toggle from "./subCompo/Toggle";
+import { CgDetailsMore } from "react-icons/cg";
+import { MdOutlineClose } from "react-icons/md";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -76,7 +78,7 @@ const Nav = () => {
           onClick={() => setOpen(!open)}
           className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
         >
-          {open ? "x" : "="}
+          {open ? <MdOutlineClose /> : <CgDetailsMore />}
         </div>
 
         <ul

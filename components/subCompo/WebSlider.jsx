@@ -90,7 +90,9 @@ const WebSlider = ({ data }) => {
               <div className="pt-1 space-x-1">
                 {links.map((link, key) => (
                   <Link href={link.link} passHref key={key}>
-                    <button className={`${link.bg} code live`}>
+                    <button
+                      className={`${link.bg === "code" ? "code" : "live"}`}
+                    >
                       {link.title}
                     </button>
                   </Link>

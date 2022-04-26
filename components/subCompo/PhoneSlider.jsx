@@ -88,13 +88,9 @@ const PhoneSlider = ({ data }) => {
                 ))}
               </div>
               <div className="pt-1 space-x-1">
-                {links.map(({ title, link, bg, shadow }, key) => (
-                  <Link href={link} key={key} passHref>
-                    <button
-                      className={`py-1 px-3 rounded-3xl text-white ${bg} ${shadow}`}
-                    >
-                      {title}
-                    </button>
+                {links.map((link, key) => (
+                  <Link href={link.link} passHref key={key}>
+                    <button className={`${link.bg}`}>{link.title}</button>
                   </Link>
                 ))}
               </div>

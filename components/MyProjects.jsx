@@ -16,7 +16,7 @@ const Testimonials = () => {
       </div>
       {/* Phone */}
       <div className="md:hidden">
-        {/* <PhoneSlider data={data} /> */}
+        <PhoneSlider data={data} />
       </div>
     </section>
   );

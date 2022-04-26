@@ -8,20 +8,20 @@ export const data = [
       "e-commerce Website",
     ],
     technology: [
-      { title: "HTML", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
-      { title: "CSS", bg: "bg-gradient-to-r from-orange-400 to-yellow-300" },
+      { title: "HTML", bg: "html" },
+      { title: "CSS", bg: "css" },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
+        bg: "code",
         shadow: "shadow-md shadow-orange-400",
       },
       {
         title: "Live Site",
         link: "https://saddaul-siam.web.app/",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],
@@ -35,24 +35,23 @@ export const data = [
       "Sports website",
     ],
     technology: [
-      { title: "HTML", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
-      { title: "CSS", bg: "bg-gradient-to-r from-orange-400 to-yellow-300" },
+      { title: "HTML", bg: "html" },
       {
         title: "Bootstrap",
-        bg: "bg-gradient-to-r from-green-400 to-emerald-600",
+        bg: "bootstrap",
       },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
+        bg: "code",
         shadow: "shadow-md shadow-orange-400",
       },
       {
         title: "Live Site",
         link: "https://saddaul-siam.web.app/",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],
@@ -66,28 +65,27 @@ export const data = [
       "e-commerce Website",
     ],
     technology: [
-      { title: "HTML", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
-      { title: "CSS", bg: "bg-gradient-to-r from-orange-400 to-yellow-300" },
+      { title: "HTML", bg: "html" },
       {
         title: "Bootstrap",
-        bg: "bg-gradient-to-r from-green-400 to-emerald-600",
+        bg: "bootstrap",
       },
       {
         title: "JavaScript",
-        bg: "bg-gradient-to-r from-sky-500 to-teal-500",
+        bg: "js",
       },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
+        bg: "code",
         shadow: "shadow-md shadow-orange-400",
       },
       {
         title: "Live Site",
         link: "#",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],
@@ -101,23 +99,23 @@ export const data = [
       "  Online learning website",
     ],
     technology: [
-      { title: "React", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
+      { title: "React", bg: "react" },
       {
         title: "Bootstrap",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-300",
+        bg: "bootstrap",
       },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
+        bg: "code",
         shadow: "shadow-md shadow-orange-400",
       },
       {
         title: "Live Site",
         link: "#",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],
@@ -131,31 +129,31 @@ export const data = [
       "Users need to log in via Google (also can create a new account)",
     ],
     technology: [
-      { title: "React", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
+      { title: "React", bg: "react" },
       {
         title: "React Router",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-300",
+        bg: "nav",
       },
       {
         title: "Bootstrap",
-        bg: "bg-gradient-to-r from-green-400 to-emerald-600",
+        bg: "bootstrap",
       },
       {
         title: "Firebase",
-        bg: "bg-gradient-to-r from-sky-500 to-teal-500",
+        bg: "firebase",
       },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
+        bg: "code",
         shadow: "shadow-md shadow-orange-400",
       },
       {
         title: "Live Site",
         link: "#",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],
@@ -170,39 +168,39 @@ export const data = [
       " Have admin and user dashboard. Admin can delete, add, manage services.",
     ],
     technology: [
-      { title: "React", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
+      { title: "React", bg: "react" },
       {
         title: "React Router",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-300",
+        bg: "nav",
       },
       {
         title: "Bootstrap",
-        bg: "bg-gradient-to-r from-green-400 to-emerald-600",
+        bg: "bootstrap",
       },
       {
         title: "Firebase",
-        bg: "bg-gradient-to-r from-sky-500 to-teal-500",
+        bg: "firebase",
       },
       {
         title: "Nodejs",
-        bg: "bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "node",
       },
       {
         title: "Mongodb",
-        bg: "bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "mongodb",
       },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
+        bg: "code",
         shadow: "shadow-md shadow-orange-400",
       },
       {
         title: "Live Site",
         link: "#",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],
@@ -217,39 +215,39 @@ export const data = [
       "Have admin and user dashboard. Admin can delete, add, manage services.",
     ],
     technology: [
-      { title: "React", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
+      { title: "React", bg: "react" },
       {
         title: "React Router",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-300",
+        bg: "nav",
       },
       {
         title: "MaterialUI",
-        bg: "bg-gradient-to-r from-green-400 to-emerald-600",
+        bg: "material",
       },
       {
         title: "Firebase",
-        bg: "bg-gradient-to-r from-sky-500 to-teal-500",
+        bg: "firebase",
       },
       {
         title: "Nodejs",
-        bg: "bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "node",
       },
       {
         title: "Mongodb",
-        bg: "bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "mongodb",
       },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
+        bg: "code",
         shadow: "shadow-md shadow-orange-400",
       },
       {
         title: "Live Site",
         link: "#",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],
@@ -264,39 +262,39 @@ export const data = [
       "Have admin and user dashboard. Admin can delete, add, manage services.",
     ],
     technology: [
-      { title: "React", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
+      { title: "React", bg: "react" },
       {
         title: "React Router",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-300",
+        bg: "nav",
       },
       {
         title: "MaterialUI",
-        bg: "bg-gradient-to-r from-green-400 to-emerald-600",
+        bg: "material",
       },
       {
         title: "Firebase",
-        bg: "bg-gradient-to-r from-sky-500 to-teal-500",
+        bg: "firebase",
       },
       {
         title: "Nodejs",
-        bg: "bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "node",
       },
       {
         title: "Mongodb",
-        bg: "bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "mongodb ",
       },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
+        bg: "code",
         shadow: "shadow-md shadow-orange-400",
       },
       {
         title: "Live Site",
         link: "#",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],
@@ -311,39 +309,39 @@ export const data = [
       " Have admin and user dashboard. Admin can delete, add, manage services.",
     ],
     technology: [
-      { title: "React", bg: "bg-gradient-to-r from-blue-600 to-indigo-400" },
+      { title: "React", bg: "react" },
       {
         title: "React Router",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-300",
+        bg: "nav",
       },
       {
         title: "MaterialUI",
-        bg: "bg-gradient-to-r from-green-400 to-emerald-600",
+        bg: "material",
       },
       {
         title: "Firebase",
-        bg: "bg-gradient-to-r from-sky-500 to-teal-500",
+        bg: "firebase",
       },
       {
         title: "Nodejs",
-        bg: "bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "node",
       },
       {
         title: "Mongodb",
-        bg: "bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "mongodb",
       },
     ],
     links: [
       {
         title: "Code",
         link: "#",
-        bg: "bg-gradient-to-r from-orange-400 to-yellow-500 dark:to-yellow-600",
-        shadow: "shadow-md shadow-orange-400",
+        bg: "code",
+        shadow: "shadow-md shadow-red-600",
       },
       {
         title: "Live Site",
         link: "#",
-        bg: "bg-gradient-to-r bg-gradient-to-r from-rose-500 to-pink-600",
+        bg: "live",
         shadow: "shadow-md shadow-rose-400",
       },
     ],

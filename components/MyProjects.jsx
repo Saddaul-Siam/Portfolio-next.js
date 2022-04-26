@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <section
       id="portfolio"
-      className="h-screen bg-gray-100 dark:bg-gray-800/30 pb-32 pt-[70rem] md:pt-0 md:scroll-mt-20"
+      className="h-screen bg-gray-100 dark:bg-gray-800/30 pb-32 pt-[70rem] md:pt-0 md:scroll-mt-0"
     >
       <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center py-3 md:py-20 ">
         My Resent Projects
@@ -16,7 +16,7 @@ const Testimonials = () => {
       </div>
       {/* Phone */}
       <div className="md:hidden">
-        <PhoneSlider data={data} />
+        {/* <PhoneSlider data={data} /> */}
       </div>
     </section>
   );

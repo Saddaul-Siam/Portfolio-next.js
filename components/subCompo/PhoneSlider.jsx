@@ -80,7 +80,7 @@ const PhoneSlider = ({ data }) => {
               <div className="pt-4">
                 {testimonials.map((testimonial, key) => (
                   <p
-                    key={key + "key" + key}
+                    key={key}
                     className="pb-2 text-gray-800 dark:text-gray-300"
                   >
                     {testimonial}

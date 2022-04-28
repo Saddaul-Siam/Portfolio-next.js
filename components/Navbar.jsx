@@ -50,12 +50,16 @@ const Nav = () => {
       label: "Experience",
     },
     {
+      href: "#aboutMe",
+      label: "About",
+    },
+    {
       href: "#portfolio",
       label: "Portfolio",
     },
     {
-      href: "#aboutMe",
-      label: "Testimonial",
+      href: "#contact",
+      label: "contact",
     },
   ];
   return (

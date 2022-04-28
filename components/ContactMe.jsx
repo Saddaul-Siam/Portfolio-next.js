@@ -8,11 +8,11 @@ import {
 
 const ContactMe = () => {
   return (
-    <section id="contact" className="h-screen container mx-auto py-20">
-      <h2 className="text-5xl font-bold font-lora text-orange-400 text-center pb-20">
+    <section id="contact" className="h-screen container mx-auto pt-[50rem] md:py-20 px-5">
+      <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 text-center pb-20">
         Contact With Me
       </h2>
-      <div className="grid grid-cols-5 ">
+      <div className="grid grid-cols-5 gap-y-3">
         <div className="col-span-5 md:col-span-2 shadow-md border border-gray-200 dark:border-gray-600 bg-gray-100/40 dark:bg-gray-800/70 space-y-5 mx-auto p-5">
           <div className="">
             <Image
@@ -54,7 +54,7 @@ const ContactMe = () => {
         </div>
         <div className="col-span-5 md:col-span-3 border border-gray-200 dark:border-gray-600 md:w-10/12 shadow-md bg-gray-100/40 dark:bg-gray-800/70">
           <div className="p-5 space-y-5 ">
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 space-y-5">
               <div className="col-span-2 md:col-span-1 md:mr-5">
                 <label
                   className="text-lg text-gray-800 dark:text-gray-100"

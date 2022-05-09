@@ -5,6 +5,7 @@ module.exports = {
       "pics.freeicons.io",
       "tailwindcss.com",
       "swiperjs.com",
+      "img.freepik.com",
     ],
   },
 };

@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="flex-row md:flex mx-5 md:mx-0">
         <div className="flex-1 space-y-7">
           <h2 className="text-5xl font-bold font-lora">Hy! I Am</h2>
-          <h1 className="text-5xl font-bold font-lora text-orange-400">
+          <h1 className="text-4xl sm:text-5xl font-bold font-lora text-orange-400">
             Saddaul Siam
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 font-medium">

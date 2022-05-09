@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         lora: "'Lora', serif",
       },
+      screens: {
+        xs: "320px",
+      },
     },
   },
   plugins: [],

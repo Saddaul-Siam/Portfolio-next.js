@@ -5,7 +5,7 @@ import img from "../img/aboutMe1.png";
 const AboutMe = () => {
   return (
     <section
-      className="h-[90vh] w-full container mx-auto relative pt-[65rem] md:pt-0 px-5 md:px-0 md:scroll-mt-32"
+      className="h-[90vh] w-full container mx-auto relative pt-[75rem] md:pt-0 px-5 md:px-0 md:scroll-mt-32"
       id="aboutMe"
     >
       <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center pt-10 md:pt-0">

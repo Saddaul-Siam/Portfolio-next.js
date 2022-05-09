@@ -8,12 +8,15 @@ import {
 
 const ContactMe = () => {
   return (
-    <section id="contact" className="h-screen container mx-auto pt-[50rem] md:py-20 px-5">
+    <section
+      id="contact"
+      className="h-screen container md:mx-auto pt-[50rem] md:py-20 px-5 "
+    >
       <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 text-center pb-20">
         Contact With Me
       </h2>
-      <div className="grid grid-cols-5 gap-y-3">
-        <div className="col-span-5 md:col-span-2 shadow-md border border-gray-200 dark:border-gray-600 bg-gray-100/40 dark:bg-gray-800/70 space-y-5 mx-auto p-5">
+      <div className="grid grid-cols-5 gap-y-3 w-screen md:w-full">
+        <div className="col-span-5 md:col-span-2  shadow-md border border-gray-200 dark:border-gray-600 bg-gray-100/40 dark:bg-gray-800/70 space-y-5 mx-auto p-5">
           <div className="">
             <Image
               width={400}

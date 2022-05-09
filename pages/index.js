@@ -23,9 +23,7 @@ export default function Home() {
       <AboutMe />
       <MyProjects />
       <ContactMe />
-      {/*
       <Footer />
-      */}
     </main>
   );
 }

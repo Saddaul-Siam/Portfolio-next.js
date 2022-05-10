@@ -15,7 +15,7 @@ import {
 
 const HeroSection = () => {
   return (
-    <header className="container mx-auto h-[80vh] mt-28 md:mt-48">
+    <header className="container md:mx-auto h-[80vh] mt-28 md:mt-48">
       <div className="flex-row md:flex mx-5 md:mx-0">
         <div className="flex-1 space-y-7">
           <h2 className="text-5xl font-bold font-lora">Hy! I Am</h2>

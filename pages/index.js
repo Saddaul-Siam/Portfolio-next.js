@@ -16,14 +16,13 @@ export default function Home() {
         <meta name="description" content="Saddaul Siam personal portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* 
       <Navbar />
       <HeroSection />
       <Services />
       <SkillsAndExperience />
       <AboutMe />
       <MyProjects />
-      <ContactMe /> */}
+      <ContactMe />
       <Footer />
     </main>
   );

@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="pt-[90] relative">
+    <footer className="mt-[88rem] md:pt-0 relative">
       <div className="">
         <div className="relative">
           <Image

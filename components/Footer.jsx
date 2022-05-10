@@ -29,14 +29,14 @@ const Footer = () => {
           <Image className="absolute" height="300" src={footerShape2} alt="" />
         </div>
       </div>
-      <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-10">
-        <div className="flex space-x-10">
-          <FaGithubSquare className="text-white hover:text-black text-5xl cursor-pointer" />
-          <FaLinkedin className="text-white hover:text-blue-500 text-5xl cursor-pointer" />
-          <FaFacebookSquare className="text-white hover:text-blue-700 text-5xl cursor-pointer" />
-          <FaInstagramSquare className="text-white hover:text-pink-600 text-5xl cursor-pointer" />
+      <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-2 md:space-y-5">
+        <div className="flex space-x-5 md:space-x-10">
+          <FaGithubSquare className="text-white hover:text-black text-lg sm:text-xl md:text-3xl lg:text-4xl cursor-pointer" />
+          <FaLinkedin className="text-white hover:text-blue-500 text-lg sm:text-xl md:text-3xl lg:text-4xl cursor-pointer" />
+          <FaFacebookSquare className="text-white hover:text-blue-700 text-lg sm:text-xl md:text-3xl lg:text-4xl cursor-pointer" />
+          <FaInstagramSquare className="text-white hover:text-pink-600 text-lg sm:text-xl md:text-3xl lg:text-4xl cursor-pointer" />
         </div>
-        <h4 className=" text-xl text-slate-00">
+        <h4 className="text-xs md:text-xl text-slate-00">
           Develop by{" "}
           <a className="underline decoration-sky-500 text-rose900">
             Saddaul Siam

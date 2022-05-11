@@ -57,7 +57,7 @@ const ContactMe = () => {
         </div>
         <div className="col-span-5 md:col-span-3 w-full border border-gray-200 dark:border-gray-600 md:w-10/12 shadow-md bg-gray-100/40 dark:bg-gray-800/70">
           <div className="p-5 space-y-5 ">
-            <div className="grid grid-cols-2 space-y-5">
+            <div className="grid grid-cols-2 space-y-5 md:space-y-0">
               <div className="col-span-2 md:col-span-1 md:mr-5">
                 <label
                   className="text-lg text-gray-800 dark:text-gray-100"

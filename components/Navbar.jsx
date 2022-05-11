@@ -70,7 +70,7 @@ const Nav = () => {
         scrollUp ? "block" : ""
       }`}
     >
-      <div className="md:flex items-center justify-between py-4 px-7 md:px-0 md:container mx-auto">
+      <div className="md:flex items-center justify-between py-4 mx-5 xl:container xl:mx-auto">
         <div className="font-bold text-2xl cursor-pointer flex items-center dark:text-white">
           Saddaul Siam
           <span className="pl-5">
@@ -102,7 +102,7 @@ const Nav = () => {
               </a>
             </li>
           ))}
-          <button className="button ml-32">Contact</button>
+          <button className="button md:ml-5 lg:ml-32">Contact</button>
         </ul>
       </div>
     </nav>

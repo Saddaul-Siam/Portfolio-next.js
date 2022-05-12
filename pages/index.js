@@ -20,8 +20,8 @@ export default function Home() {
       <HeroSection />
       <Services />
       <SkillsAndExperience />
-      {/* 
       <AboutMe />
+      {/* 
       <MyProjects />
       <ContactMe />
       <Footer /> */}

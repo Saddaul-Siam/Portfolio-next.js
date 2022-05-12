@@ -47,7 +47,7 @@ const SkillsAndExperience = () => {
   // }, []);
   return (
     <section
-      className="h-screen w-screen container md:mx-auto pt-[50rem] md:pt-5 -scroll-mt-[45rem] md:scroll-mt-20 mx-5 relative"
+      className="h-screen w-screen xl:container xl:mx-auto pt-[50rem] md:pt-5 -scroll-mt-[45rem] mx-5 md:scroll-mt-20 relative"
       id="skills"
     >
       <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center pt-10 md:pt-0">
@@ -81,7 +81,7 @@ const SkillsAndExperience = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center pt-28 gap-10 md:gap-20 mx-auto xs:ml-20 sm:ml-0">
+      <div className="flex justify-center items-center pt-28 space-x-10 md:space-x-20">
         <div className="flex flex-col justify-content items-center space-y-2">
           <div className="h-20 w-20 ring-4 ring-purple-400/70 ring-offset-8 ring-offset-purple-200 flex justify-center items-center rounded-full dark:bg-gray-700 bg-white shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-600 hover:scale-125 duration-500 cursor-pointer p-1.5">
             <h4 className="text-2xl font-extrabold font-lora">2+</h4>

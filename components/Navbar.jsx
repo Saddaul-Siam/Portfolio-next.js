@@ -70,7 +70,7 @@ const Nav = () => {
         scrollUp ? "block" : ""
       }`}
     >
-      <div className="md:flex items-center justify-between py-4 mx-5 xl:container xl:mx-auto">
+      <div className="md:flex items-center justify-between py-4 mx-5 xl:mx-20 2xl:container 2xl:mx-auto">
         <div className="font-bold text-2xl cursor-pointer flex items-center dark:text-white">
           Saddaul Siam
           <span className="pl-5">

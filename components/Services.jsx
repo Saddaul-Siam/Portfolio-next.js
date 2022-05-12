@@ -11,7 +11,7 @@ const Services = () => {
       className="pt-[450px] md:pt-1 -scroll-mt-60 md:scroll-mt-40 container md:mx-auto md:h-[90vh]"
       id="services"
     >
-      <div className="grid grid-cols-3 gap-4 mx-5">
+      <div className="grid grid-cols-3 gap-4 mx-5 xl:mx-0">
         <div className="col-span-3 md:col-span-1 space-y-5 mb-10">
           <h2 className="text-4xl lg:text-5xl font-bold font-lora">
             My Awesome

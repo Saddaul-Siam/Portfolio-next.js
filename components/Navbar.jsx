@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import Image from "next/image";
+
 import Toggle from "./subCompo/Toggle";
 import { CgDetailsMore } from "react-icons/cg";
 import { MdOutlineClose } from "react-icons/md";
+import logo from "../img/logo.png";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -72,8 +75,9 @@ const Nav = () => {
     >
       <div className="md:flex items-center justify-between py-4 mx-5 xl:mx-20 2xl:container 2xl:mx-auto">
         <div className="font-bold text-2xl cursor-pointer flex items-center dark:text-white">
-          Saddaul Siam
-          <span className="pl-5">
+          <Image src={logo} height="50" width="50"alt="" />
+
+          <span className="pl-10">
             <Toggle />
           </span>
         </div>

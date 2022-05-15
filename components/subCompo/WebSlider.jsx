@@ -30,7 +30,7 @@ const WebSlider = ({ data }) => {
       }}
       slidesPerView={"auto"}
       coverflowEffect={{
-        rotate: 50,
+        rotate: 40,
         stretch: 0,
         depth: 100,
         modifier: 1,

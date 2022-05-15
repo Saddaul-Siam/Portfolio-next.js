@@ -60,7 +60,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="h-auto md:h-72 w-[90vw] md:w-[95vw]  xl:w-60 xl:absolute  xl:-right-8 2xl:right-[138px] top-48 border-4 dark:border-2 border-orange-400 rounded-2xl p-5 shadow-md shadow-orange-400/50 z-40 md:flex xl:flex-col md:justify-around">
+          <div className="h-auto md:h-72 w-[90vw] md:w-[95vw] xl:w-60 xl:absolute xl:-right-14 2xl:right-[115px] top-48 border-4 dark:border-2 border-orange-400 rounded-2xl p-5 shadow-md shadow-orange-400/50 z-40 md:flex xl:flex-col md:justify-around">
             <Image className="" src={fontEnd} width={300} height={200} alt="" />
             <div className="flex flex-col justify-center items-center space-y-3 ">
               <h4 className="font-lora font-semibold text-xl pt-3">
@@ -72,7 +72,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="h-auto md:h-72 w-[90vw] md:w-[95vw]  xl:w-60 xl:absolute  bottom-0 2xl:bottom-40 xl:left-96 border-4 dark:border-2 border-orange-400 rounded-2xl p-5 shadow-md shadow-orange-400/50 z-50 md:flex xl:flex-col md:justify-around">
+          <div className="h-auto md:h-72 w-[90vw] md:w-[95vw]  xl:w-60 xl:absolute bottom-0 2xl:bottom-40 xl:left-96 border-4 dark:border-2 border-orange-400 rounded-2xl p-5 shadow-md shadow-orange-400/50 z-50 md:flex xl:flex-col md:justify-around">
             <Image className="" src={backEnd} width={300} height={200} alt="" />
             <div className="flex flex-col justify-center items-center space-y-3 ">
               <h4 className="font-lora font-semibold text-xl pt-3">

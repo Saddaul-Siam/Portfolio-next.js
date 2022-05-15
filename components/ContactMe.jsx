@@ -10,13 +10,14 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="h-screen container md:pl-5 xl:mx-auto mt-24 md:py-20 relative"
+      className="h-screen container md:pl-5 xl:mx-auto mt-24 md:py-20 relative md:-scroll-mt-16 lg:scroll-mt-0"
     >
       <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 text-center pb-20">
         Contact With Me
       </h2>
-      <div className="grid grid-cols-5 gap-y-3 md:gap-x-36 lg:gap-x-5 w-screen md:w-full px-5 md:px-0">
-        <div className="col-span-5 md:col-span-2 w-full md:w-auto shadow-md border border-gray-200 dark:border-gray-600 bg-gray-100/40 dark:bg-gray-800/70 space-y-5 mx-auto p-5 ">
+      <div className="grid grid-cols-5 gap-y-3 md:gap-x-44 lg:gap-x-5 w-screen md:w-full px-5 md:px-0">
+
+        <div className="col-span-5 md:col-span-2 w-full md:w-auto shadow-md border border-gray-200 dark:border-gray-600 bg-gray-100/40 dark:bg-gray-800/70 space-y-5 mx-auto p-5">
           <div className="">
             <Image
               width={400}
@@ -55,7 +56,8 @@ const ContactMe = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-5 md:col-span-3 w-full border border-gray-200 dark:border-gray-600 md:w-10/12 shadow-md bg-gray-100/40 dark:bg-gray-800/70">
+
+        <div className="col-span-5 md:col-span-3 w-full border border-gray-200 dark:border-gray-600 md:w-11/12 xl:w-10/12 shadow-md bg-gray-100/40 dark:bg-gray-800/70">
           <div className="p-5 space-y-5 ">
             <div className="grid grid-cols-2 space-y-5 md:space-y-0">
               <div className="col-span-2 md:col-span-1 md:mr-5">
@@ -128,9 +130,10 @@ const ContactMe = () => {
             </div>
           </div>
         </div>
+
       </div>
-      <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute top-0 left-0 bg-pink-200/30 dark:bg-cyan-200/30 "></div>
-      <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute bottom-0 right-0 dark:bg-pink-200/20 bg-cyan-200/30 "></div>
+      {/* <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute top-0 left-0 bg-pink-200/30 dark:bg-cyan-200/30 "></div>
+      <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute bottom-0 right-0 dark:bg-pink-200/20 bg-cyan-200/30 "></div> */}
     </section>
   );
 };

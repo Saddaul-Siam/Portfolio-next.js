@@ -5,13 +5,13 @@ import img from "../img/aboutMe1.png";
 const AboutMe = () => {
   return (
     <section
-      className="h-[90vh] w-full container md:mx-auto relative pt-[65rem] md:pt-[45rem] lg:pt-[30rem] xl:lg:pt-[20rem] 2xl:pt-0 px-5 xl:px-0 md:scroll-mt-32"
+      className="h-[90vh] w-screen container md:mx-auto relative pt-[72rem] md:pt-[65rem] lg:pt-[75rem] xl:lg:pt-[20rem] 2xl:pt-0 px-5 xl:px-0 -scroll-mt-[70rem] md:-scroll-mt-[60rem] lg:-scroll-mt-[70rem] xl:-scroll-mt-56 2xl:scroll-mt-24"
       id="aboutMe"
     >
-      <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center">
+      <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center items-center">
         About Me
       </h2>
-      <div className="w-[95vw] md:w-full grid grid-cols-2 gap-10 pt-20">
+      <div className="w-[90vw] md:w-full grid grid-cols-2 gap-10 pt-20">
         <div className="col-span-2 md:col-span-1 flex justify-center">
           <Image
             className="object-cover"

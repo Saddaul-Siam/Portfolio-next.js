@@ -16,18 +16,18 @@ const PhoneSlider = ({ data }) => {
   return (
     <Swiper
       style={{
-        padding: 50,
+        padding: 20,
         width: "100%",
         paddingTop: "50px",
         paddingBottom: " 50px",
       }}
       effect={"coverflow"}
       grabCursor={true}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // }}
-      // slidesPerView={"auto"}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      slidesPerView={"auto"}
       coverflowEffect={{
         rotate: 50,
         stretch: 0,

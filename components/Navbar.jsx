@@ -69,14 +69,15 @@ const Nav = () => {
     <nav
       className={`w-full fixed top-0 left-0 dark:text-white ${
         scroll ? "dark:bg-gray-900/80 bg-white/50 shadow-sm" : "bg-transparent"
-      } backdrop-blur-md py-2 z-[1000] ${scrollDown ? "hidden" : ""}${
+      } backdrop-blur-md z-[1000] ${scrollDown ? "hidden" : ""}${
         scrollUp ? "block" : ""
       }`}
     >
       <div className="md:flex items-center justify-between py-4 mx-5 xl:mx-20 2xl:container 2xl:mx-auto">
         <div className="font-bold text-2xl cursor-pointer flex items-center dark:text-white">
-          <Image src={logo} height="50" width="50"alt="" />
-
+          <a href="#">
+            <Image src={logo} height="50" width="50" alt="" />
+          </a>
           <span className="pl-10">
             <Toggle />
           </span>

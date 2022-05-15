@@ -10,19 +10,21 @@ import SkillsAndExperience from "../components/SkillsAndExperience";
 
 export default function Home() {
   return (
-    <main className="bg-white dark:bg-gray-900 scroll-smooth">
+    <main className="bg-white dark:bg-gray-900 scroll-smooth border">
       <Head>
         <title>Saddaul Siam</title>
         <meta name="description" content="Saddaul Siam personal portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <HeroSection />
+      {/* <Navbar /> */}
+      {/* <HeroSection /> */}
       <Services />
-      <SkillsAndExperience />
+      {/* <SkillsAndExperience /> */}
+      {/*
       <AboutMe />
       <MyProjects />
-      <ContactMe />
+      <ContactMe /> */}
+
       <Footer />
     </main>
   );

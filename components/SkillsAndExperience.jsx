@@ -47,7 +47,7 @@ const SkillsAndExperience = () => {
   // }, []);
   return (
     <section
-      className="h-screen w-screen xl:container xl:mx-auto pt-[50rem] md:pt-5 -scroll-mt-[45rem] mx-5 md:scroll-mt-20 relative"
+      className="h-screen xl:container xl:mx-auto pt-[50rem] md:pt-[50rem] -scroll-mt-[45rem] mx-5 md:scroll-mt-20 relative"
       id="skills"
     >
       <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center pt-10 md:pt-0">

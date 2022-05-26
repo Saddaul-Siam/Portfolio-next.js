@@ -10,7 +10,7 @@ import SkillsAndExperience from "../components/SkillsAndExperience";
 
 export default function Home() {
   return (
-    <main className="bg-white dark:bg-gray-900 scroll-smooth border">
+    <main className="bg-white dark:bg-gray-900 scroll-smooth">
       <Head>
         <title>Saddaul Siam</title>
         <meta name="description" content="Saddaul Siam personal portfolio" />

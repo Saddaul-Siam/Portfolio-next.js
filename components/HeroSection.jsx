@@ -38,18 +38,18 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="flex-1 relative pt-32 md:pt-0">
-          <div className="absolute left-[-15%] md:top-[-9%] ">
+          <div className="absolute left-[-15%] md:top-[5%] lg:top[-9%] ">
             <Image src={Vector1} className="scale-[0.70] z-20" alt="" />
           </div>
-          <div className="absolute left-[-3rem] md:top-[-4.6rem] ">
+          <div className="absolute left-[-3rem] md:top-[1rem] lg:top-[-4.6rem] ">
             <Image src={Vector2} className="scale-[0.68] z-30" alt="" />
           </div>
 
-          <div className="absolute left-[5%] md:left-[25%] md:-bottom-20 top-20 md:-top-12">
-            <div className="md:hidden">
-              <Image src={boy} className="scale-95 z-40" alt="" />
+          <div className="">
+            <div className="md:hidden absolute top-8 left-[3%]">
+              <Image src={boy} className="scale-90 z-40" alt="" />
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:block absolute md:top-0 md:left-[20%] md:-bottom-20 ">
               <Image
                 src={boy}
                 width={400}
@@ -60,18 +60,20 @@ const HeroSection = () => {
             </div>
           </div>
           {/* blur div */}
-          <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute md:-top-20 md:-right-40 bg-pink-200 dark:bg-pink-200/30 z-10"></div>
-          <div className="animate-pulse hidden md:block blur-3xl w-96 h-80 rounded-full absolute -bottom-52 -left-40 bg-cyan-200 dark:bg-cyan-200/30 -z-0"></div>
+          {/* <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute md:-top-20 md:-right-40 bg-pink-200 dark:bg-pink-200/30 z-10"></div>
+          <div className="animate-pulse hidden md:block blur-3xl w-96 h-80 rounded-full absolute -bottom-52 -left-40 bg-cyan-200 dark:bg-cyan-200/30 -z-0"></div> */}
 
           <div className="hidden md:block absolute top-14 -left-4 md:-top-20 md:-left-20 ">
             <Image src={glasses} alt="" className="" />
             {/* <Image src={glassesimoji} alt="" className="scale-75" /> */}
           </div>
-          <div className="h-20 w-48 md:h-24 md:w-64 flex justify-start items-center rounded-3xl absolute top-10 -right-4 md:-top-10 md:-right-20 bg-white z-50 ">
-            <Image src={crown} alt="" className="scale-50 " />
+
+          <div className="h-20 w-44 md:h-24 md:w-48 lg:w-64 flex justify-start items-center rounded-3xl absolute top-5 md:-top-24 -right-5 md:right-0 bg-white z-50">
+            <Image src={crown} alt="" className="scale-50" />
             <span className="text-lg text-gray-600">Web Developer</span>
           </div>
-          <div className="h-20  w-48 md:h-24 md:w-64 flex justify-start items-center rounded-3xl absolute -bottom-96 left-0 md:-bottom-20 md:-left-14 bg-white z-50 ">
+
+          <div className="h-20 w-44 md:h-24 md:w-48 lg:w-64 flex justify-start items-center rounded-3xl absolute -bottom-96 left-0 md:bottom-12 md:-left-8 bg-white z-50 ">
             <Image src={thumbup} alt="" className="scale-50 " />
             <span className="text-lg text-gray-600">Web Designer</span>
           </div>

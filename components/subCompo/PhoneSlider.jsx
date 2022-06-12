@@ -74,14 +74,14 @@ const PhoneSlider = ({ data }) => {
                   </div>
                 ))}
               </div>
-              <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+              <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-400">
                 {name}
               </h2>
               <div className="pt-4">
                 {testimonials.map((testimonial, key) => (
                   <p
                     key={key}
-                    className="pb-2 text-gray-800 dark:text-gray-300"
+                    className="pb-2 text-gray-800 dark:text-gray-400"
                   >
                     {testimonial}
                   </p>

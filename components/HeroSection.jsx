@@ -15,14 +15,14 @@ import {
 
 const HeroSection = () => {
   return (
-    <header className="md:container md:mx-auto h-[80vh] mt-28 md:mt-48">
-      <div className="flex-row md:flex mx-5 xl:mx-0">
+    <header className="mt-28 h-[80vh] md:container md:mx-auto md:mt-48">
+      <div className="mx-5 flex-row md:flex xl:mx-0">
         <div className="flex-1 space-y-7">
-          <h2 className="text-5xl font-bold font-lora">Hy! I Am</h2>
-          <h1 className="text-4xl sm:text-5xl font-bold font-lora text-orange-400">
+          <h2 className="font-lora text-5xl font-bold">Hy! I Am</h2>
+          <h1 className="font-lora text-4xl font-bold text-orange-400 sm:text-5xl">
             Saddaul Siam
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 font-medium">
+          <p className="text-lg font-medium text-gray-600 dark:text-gray-400 md:w-9/12">
             Frontend Developer with high level of experience in web designing
             and development, producting the Quality work
           </p>
@@ -30,26 +30,26 @@ const HeroSection = () => {
             Hire me
           </button>
           {/* social icons */}
-          <div className="pt-20 flex space-x-10">
-            <FaGithubSquare className="text-orange-400 hover:text-black dark:hover:text-white text-5xl cursor-pointer" />
-            <FaLinkedin className="text-orange-400 hover:text-blue-500 text-5xl cursor-pointer" />
-            <FaFacebookSquare className="text-orange-400 hover:text-blue-700 text-5xl cursor-pointer" />
-            <FaInstagramSquare className="text-orange-400 hover:text-pink-600 text-5xl cursor-pointer" />
+          <div className="flex space-x-10 pt-20">
+            <FaGithubSquare className="cursor-pointer text-5xl text-orange-400 hover:text-black dark:hover:text-white" />
+            <FaLinkedin className="cursor-pointer text-5xl text-orange-400 hover:text-blue-500" />
+            <FaFacebookSquare className="cursor-pointer text-5xl text-orange-400 hover:text-blue-700" />
+            <FaInstagramSquare className="cursor-pointer text-5xl text-orange-400 hover:text-pink-600" />
           </div>
         </div>
-        <div className="flex-1 relative pt-32 md:pt-0">
-          <div className="absolute left-0 right-0 md:left-[-15%] top-52 md:top-[5%] lg:top[-9%] ">
-            <Image src={Vector1} className="scale-[0.70] z-20" alt="" />
+        <div className="relative flex-1 pt-32 md:pt-0">
+          <div className="lg:top[-9%] absolute left-0 right-0 top-52 md:left-[-15%] md:top-[5%] ">
+            <Image src={Vector1} className="z-20 scale-[0.70]" alt="" />
           </div>
-          <div className="absolute left-0 right-0 md:left-[-3rem] top-48 md:top-[1rem] lg:top-[-4.6rem] ">
-            <Image src={Vector2} className="scale-[0.68] z-30" alt="" />
+          <div className="absolute left-0 right-0 top-48 md:left-[-3rem] md:top-[1rem] lg:top-[-4.6rem] ">
+            <Image src={Vector2} className="z-30 scale-[0.68]" alt="" />
           </div>
 
           <div className="">
-            <div className="md:hidden absolute top-28 left-16 right-0">
-              <Image src={boy} className="scale-90 z-40" alt="" />
+            <div className="absolute top-28 left-16 right-0 md:hidden">
+              <Image src={boy} className="z-40 scale-90" alt="" />
             </div>
-            <div className="hidden md:block absolute md:top-0 md:left-[20%] md:-bottom-20 ">
+            <div className="absolute hidden md:top-0 md:left-[20%] md:-bottom-20 md:block ">
               <Image
                 src={boy}
                 width={400}
@@ -60,20 +60,20 @@ const HeroSection = () => {
             </div>
           </div>
           {/* blur div */}
-          {/* <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute md:-top-20 md:-right-40 bg-pink-200 dark:bg-pink-200/30 z-10"></div>
-          <div className="animate-pulse hidden md:block blur-3xl w-96 h-80 rounded-full absolute -bottom-52 -left-40 bg-cyan-200 dark:bg-cyan-200/30 -z-0"></div> */}
+          {/* <div className="absolute z-10 h-80 w-96 animate-pulse rounded-full bg-pink-200 blur-3xl dark:bg-pink-200/30 md:-top-20 md:-right-40"></div>
+          <div className="absolute -bottom-52 -left-40 -z-0 hidden h-80 w-96 animate-pulse rounded-full bg-cyan-200 blur-3xl dark:bg-cyan-200/30 md:block"></div> */}
 
-          <div className="hidden md:block absolute top-14 -left-4 md:-top-20 md:-left-20 ">
+          <div className="absolute top-14 -left-4 hidden md:-top-20 md:-left-20 md:block ">
             <Image src={glasses} alt="" className="" />
             {/* <Image src={glassesimoji} alt="" className="scale-75" /> */}
           </div>
 
-          <div className="h-20 w-44 md:h-24 md:w-48 lg:w-64 flex justify-start items-center rounded-3xl absolute top-10 md:-top-24 -right-5 md:right-0 bg-white z-50">
+          <div className="absolute top-10 -right-5 z-50 flex h-20 w-44 items-center justify-start rounded-3xl bg-white md:-top-24 md:right-0 md:h-24 md:w-48 lg:w-64">
             <Image src={crown} alt="" className="scale-50" />
             <span className="text-lg text-gray-600">Web Developer</span>
           </div>
 
-          <div className="h-20 w-44 md:h-24 md:w-48 lg:w-64 flex justify-start items-center rounded-3xl absolute -bottom-[28rem] left-0 md:bottom-12 md:-left-8 bg-white z-50 ">
+          <div className="absolute -bottom-[28rem] left-0 z-50 flex h-20 w-44 items-center justify-start rounded-3xl bg-white md:bottom-12 md:-left-8 md:h-24 md:w-48 lg:w-64 ">
             <Image src={thumbup} alt="" className="scale-50 " />
             <span className="text-lg text-gray-600">Web Designer</span>
           </div>

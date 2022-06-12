@@ -60,21 +60,17 @@ const Nav = () => {
       href: "#portfolio",
       label: "Portfolio",
     },
-    {
-      href: "#contact",
-      label: "contact",
-    },
   ];
   return (
     <nav
-      className={`w-full fixed top-0 left-0 dark:text-white ${
-        scroll ? "dark:bg-gray-900/80 bg-white/50 shadow-sm" : "bg-transparent"
-      } backdrop-blur-md z-[1000] ${scrollDown ? "hidden" : ""}${
+      className={`fixed top-0 left-0 w-full transition-all duration-500 ease-in dark:text-white ${
+        scroll ? "bg-white/50 shadow-sm dark:bg-gray-900/80" : "bg-transparent"
+      } z-[1000] backdrop-blur-md ${scrollDown ? "hidden" : ""}${
         scrollUp ? "block" : ""
       }`}
     >
-      <div className="md:flex items-center justify-between py-4 mx-5 xl:mx-20 2xl:container 2xl:mx-auto">
-        <div className="font-bold text-2xl cursor-pointer flex items-center dark:text-white">
+      <div className="mx-5 items-center justify-between py-4 md:flex xl:mx-20 2xl:container 2xl:mx-auto">
+        <div className="flex cursor-pointer items-center text-2xl font-bold dark:text-white">
           <a href="#">
             <Image src={logo} height="50" width="50" alt="" />
           </a>
@@ -85,29 +81,31 @@ const Nav = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="absolute right-8 top-6 cursor-pointer text-3xl md:hidden"
         >
           {open ? <MdOutlineClose /> : <CgDetailsMore />}
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static  left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`absolute left-0 w-full pb-12 pl-9 transition-all duration-500 ease-in md:static md:flex md:w-auto md:items-center md:pb-0 md:pl-0 ${
             open
-              ? "top-16 dark:bg-gray-900 bg-white"
+              ? "top-16 bg-white dark:bg-gray-900"
               : "top-[-490px] bg-transparent"
           }`}
         >
           {NavLinks.map((link) => (
-            <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7 ">
+            <li key={link.label} className="my-7 text-xl md:my-0 md:ml-8 ">
               <a
                 href={link.href}
-                className="text-gray-900 dark:text-white dark:hover:text-orange-400 hover:text-orange-400 duration-500"
+                className="text-gray-900 duration-500 hover:text-orange-400 dark:text-white dark:hover:text-orange-400"
               >
                 {link.label}
               </a>
             </li>
           ))}
-          <button className="button md:ml-5 lg:ml-32">Contact</button>
+          <a href="#contact">
+            <button className="button md:ml-5 lg:ml-32">Contact</button>
+          </a>
         </ul>
       </div>
     </nav>

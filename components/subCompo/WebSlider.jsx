@@ -57,18 +57,18 @@ const WebSlider = ({ data }) => {
             }}
           >
             <Image
-              className="object-cover rounded-2xl w-full"
+              className="w-full rounded-2xl object-cover"
               width={580}
               height={360}
               src={image}
               alt=""
             />
             <div className="bg-red-00">
-              <div className="py-4 flex flex-wrap">
+              <div className="flex flex-wrap py-4">
                 {technology.map((techno, key) => (
                   <div
                     key={key + "key"}
-                    className={`${techno?.bg} text-white py-1 px-3 rounded-3xl mx-0.5 font-lora`}
+                    className={`${techno?.bg} mx-0.5 rounded-3xl py-1 px-3 font-lora text-white`}
                   >
                     {techno?.title}
                   </div>
@@ -87,7 +87,7 @@ const WebSlider = ({ data }) => {
                   </p>
                 ))}
               </div>
-              <div className="pt-1 space-x-1">
+              <div className="space-x-1 pt-1">
                 {links.map((link, key) => (
                   <Link href={link.link} passHref key={key}>
                     <button

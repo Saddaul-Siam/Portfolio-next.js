@@ -5,14 +5,14 @@ import img from "../img/aboutMe1.png";
 const AboutMe = () => {
   return (
     <section
-      className="h-[90vh] w-screen container md:mx-auto relative pt-[72rem] md:pt-[65rem] lg:pt-[75rem] xl:lg:pt-[20rem] 2xl:pt-0 px-5 xl:px-0 -scroll-mt-[70rem] md:-scroll-mt-[60rem] lg:-scroll-mt-[70rem] xl:-scroll-mt-56 2xl:scroll-mt-24"
+      className="container relative h-[90vh] w-screen -scroll-mt-[70rem] px-5 pt-[72rem] md:mx-auto md:-scroll-mt-[60rem] md:pt-[65rem] lg:-scroll-mt-[70rem] lg:pt-[75rem] xl:-scroll-mt-56 xl:px-0 xl:lg:pt-[20rem] 2xl:scroll-mt-24 2xl:pt-0"
       id="aboutMe"
     >
-      <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center items-center">
+      <h2 className="flex items-center justify-center font-lora text-3xl font-bold text-orange-400 md:text-5xl">
         About Me
       </h2>
-      <div className="w-[90vw] md:w-full grid grid-cols-2 gap-10 pt-20">
-        <div className="col-span-2 md:col-span-1 flex justify-center">
+      <div className="grid w-[90vw] grid-cols-2 gap-10 pt-20 md:w-full">
+        <div className="col-span-2 flex justify-center md:col-span-1">
           <Image
             className="object-cover"
             src={img}
@@ -21,12 +21,12 @@ const AboutMe = () => {
             alt="Saddaul siam images"
           />
         </div>
-        <div className="col-span-2 md:col-span-1 space-y-10 lex flex-col justify-center">
-          <h2 className="font-lora font-semibold text-3xl">
+        <div className="lex col-span-2 flex-col justify-center space-y-10 md:col-span-1">
+          <h2 className="font-lora text-3xl font-semibold">
             I’m Saddaul Siam and I’m a
             <span className="text-orange-400"> Frontend Developer</span>
           </h2>
-          <p className="text-xl font-lora">
+          <p className="font-lora text-xl">
             I’m a Front End Web developer who is passionate about making
             error-free websites with 100% client satisfaction. I love to solve
             real-world problems. I am strategic, goal-oriented, and always work
@@ -45,7 +45,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block bottom-56 right-0 dark:block animate-pulse blur-3xl w-96 h-80 rounded-full absolute dark:bg-pink-200/30 bg-cyan-200/50 z-0"></div>
+      <div className="absolute bottom-56 right-0 z-0 hidden h-80 w-96 animate-pulse rounded-full bg-cyan-200/50 blur-3xl dark:block dark:bg-pink-200/30 md:block"></div>
     </section>
   );
 };

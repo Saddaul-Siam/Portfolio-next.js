@@ -8,19 +8,19 @@ import developer from "../img/developer.svg";
 const Services = () => {
   return (
     <section
-      className="lg:h-[90vh] w-screen pt-[450px] md:pt-1 -scroll-mt-60 md:scroll-mt-40 container md:mx-auto "
+      className="container w-screen -scroll-mt-60 pt-[450px] md:mx-auto md:scroll-mt-40 md:pt-1 lg:h-[90vh] "
       id="services"
     >
       <div className="grid grid-cols-3 gap-4 px-5 xl:mx-0">
-        <div className="col-span-3 xl:col-span-1 mb-10">
-          <div className="w-[90vw] md:w-auto space-y-5">
-            <h2 className="text-4xl lg:text-5xl font-bold font-lora">
+        <div className="col-span-3 mb-10 xl:col-span-1">
+          <div className="w-[90vw] space-y-5 md:w-auto">
+            <h2 className="font-lora text-4xl font-bold lg:text-5xl">
               My Awesome
             </h2>
-            <h2 className="text-5xl font-bold font-lora text-orange-400">
+            <h2 className="font-lora text-5xl font-bold text-orange-400">
               Services
             </h2>
-            <p className="text-md text-gray-600 dark:text-gray-400 font-medium">
+            <p className="text-md font-medium text-gray-600 dark:text-gray-400">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
               ipsam impedit in, sapiente laudantium, totam placeat iste
               excepturi labore tenetur repellat consectetur
@@ -37,11 +37,11 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="h-[80vh] col-span-3 xl:md:col-span-2 relative space-y-5">
-          <div className="h-auto lg:h-72 w-[90vw] md:w-[95vw] xl:w-60 xl:absolute xl:left-96 border-4 dark:border-2 border-orange-400 rounded-2xl p-5 shadow-md shadow-orange-400/50 z-20 md:flex xl:flex-col md:justify-around">
+        <div className="relative col-span-3 h-[80vh] space-y-5 xl:md:col-span-2">
+          <div className="z-20 h-auto w-[90vw] rounded-2xl border-4 border-orange-400 p-5 shadow-md shadow-orange-400/50 dark:border-2 md:flex md:w-[95vw] md:justify-around lg:h-72 xl:absolute xl:left-96 xl:w-60 xl:flex-col">
             <Image src={developer} width={300} height={200} alt="" />
-            <div className="flex flex-col justify-center items-center space-y-3">
-              <h4 className="font-lora font-semibold text-xl pt-3">
+            <div className="flex flex-col items-center justify-center space-y-3">
+              <h4 className="pt-3 font-lora text-xl font-semibold">
                 Developer
               </h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
@@ -50,20 +50,20 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="h-auto md:h-72 w-[90vw] md:w-[95vw]  xl:w-60 xl:absolute left-0 xl:left-32 top-48 border-4 dark:border-2 border-orange-400 rounded-2xl p-5 shadow-md shadow-orange-400/50 z-30 md:flex xl:flex-col md:justify-around">
+          <div className="left-0 top-48 z-30 h-auto  w-[90vw] rounded-2xl border-4 border-orange-400 p-5 shadow-md shadow-orange-400/50 dark:border-2 md:flex md:h-72 md:w-[95vw] md:justify-around xl:absolute xl:left-32 xl:w-60 xl:flex-col">
             <Image className="" src={design} width={300} height={200} alt="" />
-            <div className="flex flex-col justify-center items-center space-y-3 ">
-              <h4 className="font-lora font-semibold text-xl pt-3">Design</h4>
+            <div className="flex flex-col items-center justify-center space-y-3 ">
+              <h4 className="pt-3 font-lora text-xl font-semibold">Design</h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
                 Figma, Sketch, Photoshop, <br /> Adobe Illustrator, Adobe xd
               </p>
             </div>
           </div>
 
-          <div className="h-auto md:h-72 w-[90vw] md:w-[95vw] xl:w-60 xl:absolute xl:-right-14 2xl:right-[115px] top-48 border-4 dark:border-2 border-orange-400 rounded-2xl p-5 shadow-md shadow-orange-400/50 z-40 md:flex xl:flex-col md:justify-around">
+          <div className="top-48 z-40 h-auto w-[90vw] rounded-2xl border-4 border-orange-400 p-5 shadow-md shadow-orange-400/50 dark:border-2 md:flex md:h-72 md:w-[95vw] md:justify-around xl:absolute xl:-right-14 xl:w-60 xl:flex-col 2xl:right-[115px]">
             <Image className="" src={fontEnd} width={300} height={200} alt="" />
-            <div className="flex flex-col justify-center items-center space-y-3 ">
-              <h4 className="font-lora font-semibold text-xl pt-3">
+            <div className="flex flex-col items-center justify-center space-y-3 ">
+              <h4 className="pt-3 font-lora text-xl font-semibold">
                 FontEnd Developer
               </h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
@@ -72,10 +72,10 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="h-auto md:h-72 w-[90vw] md:w-[95vw]  xl:w-60 xl:absolute bottom-0 2xl:bottom-40 xl:left-96 border-4 dark:border-2 border-orange-400 rounded-2xl p-5 shadow-md shadow-orange-400/50 z-50 md:flex xl:flex-col md:justify-around">
+          <div className="bottom-0 z-50 h-auto w-[90vw]  rounded-2xl border-4 border-orange-400 p-5 shadow-md shadow-orange-400/50 dark:border-2 md:flex md:h-72 md:w-[95vw] md:justify-around xl:absolute xl:left-96 xl:w-60 xl:flex-col 2xl:bottom-40">
             <Image className="" src={backEnd} width={300} height={200} alt="" />
-            <div className="flex flex-col justify-center items-center space-y-3 ">
-              <h4 className="font-lora font-semibold text-xl pt-3">
+            <div className="flex flex-col items-center justify-center space-y-3 ">
+              <h4 className="pt-3 font-lora text-xl font-semibold">
                 BackEnd Developer
               </h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
@@ -84,7 +84,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="animate-pulse blur-3xl w-64 h-64 md:w-96  md:h-80 rounded-full absolute bottom-40 md:top-48  md:left-[300px] bg-pink-200/50 md:bg-pink-200 dark:bg-cyan-200/30 z-10"></div>
+          <div className="absolute bottom-40 z-10 h-64 w-64  animate-pulse rounded-full bg-pink-200/50 blur-3xl dark:bg-cyan-200/30  md:top-48 md:left-[300px] md:h-80 md:w-96 md:bg-pink-200"></div>
         </div>
       </div>
     </section>

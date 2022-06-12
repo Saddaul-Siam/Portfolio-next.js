@@ -47,32 +47,32 @@ const SkillsAndExperience = () => {
   // }, []);
   return (
     <section
-      className="h-screen w-scree mx-5 xl:container xl:mx-auto pt-[50rem] md:pt-[45rem] lg:pt-[65rem] xl:pt-20 -scroll-mt-[50rem] md:-scroll-mt-[42rem] lg:-scroll-mt-[62rem] xl:scroll-mt-0 relative"
+      className="w-scree relative mx-5 h-screen -scroll-mt-[50rem] pt-[50rem] md:-scroll-mt-[42rem] md:pt-[45rem] lg:-scroll-mt-[62rem] lg:pt-[65rem] xl:container xl:mx-auto xl:scroll-mt-0 xl:pt-20"
       id="skills"
     >
-      <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 flex justify-center pt-10 md:pt-0">
+      <h2 className="flex justify-center pt-10 font-lora text-3xl font-bold text-orange-400 md:pt-0 md:text-5xl">
         Skills & Experience
       </h2>
-      <div className="grid grid-cols-2 md:gap-18 gap-10 pt-10 md:pt-28 ">
-        <div className="col-span-2 lg:col-span-1 flex flex-wrap gap-2 md:gap-9 z-10">
+      <div className="md:gap-18 grid grid-cols-2 gap-10 pt-10 md:pt-28 ">
+        <div className="z-10 col-span-2 flex flex-wrap gap-2 md:gap-9 lg:col-span-1">
           {skills.map((skill, i) => (
             <SkillsIcons key={i} skill={skill} />
           ))}
         </div>
-        <div className="col-span-2 lg:col-span-1 space-y-10">
+        <div className="col-span-2 space-y-10 lg:col-span-1">
           <div className="flex gap-10">
-            <h2 className="font-semibold text-xl text-purple-700">2021</h2>
+            <h2 className="text-xl font-semibold text-purple-700">2021</h2>
             <div className="">
-              <h4 className="font-semibold text-xl">FontEnd Developer</h4>
+              <h4 className="text-xl font-semibold">FontEnd Developer</h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
                 Programming Hero
               </p>
             </div>
           </div>
           <div className="flex gap-10">
-            <h2 className="font-semibold text-xl text-purple-700">2022</h2>
+            <h2 className="text-xl font-semibold text-purple-700">2022</h2>
             <div className="">
-              <h4 className="font-semibold text-xl">Full Stack Developer</h4>
+              <h4 className="text-xl font-semibold">Full Stack Developer</h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
                 Programming Hero
               </p>
@@ -81,29 +81,29 @@ const SkillsAndExperience = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center pt-28  space-x-8 md:space-x-20">
-        <div className="flex flex-col justify-content items-center space-y-2">
-          <div className="h-16 w-16 ring-4 ring-purple-400/70 ring-offset-8 ring-offset-purple-200 flex justify-center items-center rounded-full dark:bg-gray-700 bg-white shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-600 hover:scale-125 duration-500 cursor-pointer p-1.5">
-            <h4 className="text-2xl font-extrabold font-lora">2+</h4>
+      <div className="flex items-center justify-center space-x-8  pt-28 md:space-x-20">
+        <div className="justify-content flex flex-col items-center space-y-2">
+          <div className="flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white p-1.5 shadow-lg ring-4 ring-purple-400/70 ring-offset-8 ring-offset-purple-200 duration-500 hover:scale-125 hover:shadow-gray-400 dark:bg-gray-700 dark:hover:shadow-gray-600">
+            <h4 className="font-lora text-2xl font-extrabold">2+</h4>
           </div>
-          <p className="capitalize text-md font-medium pt-3">years</p>
-          <p className="text-orange-400 text-lg">Experience</p>
+          <p className="text-md pt-3 font-medium capitalize">years</p>
+          <p className="text-lg text-orange-400">Experience</p>
         </div>
 
-        <div className="flex flex-col justify-content items-center space-y-2">
-          <div className="h-16 w-16 ring-4 ring-purple-400/70 ring-offset-8 ring-offset-purple-200 flex justify-center items-center rounded-full dark:bg-gray-700 bg-white shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-600 hover:scale-125 duration-500 cursor-pointer p-1.5">
-            <h4 className="text-2xl font-extrabold font-lora">20+</h4>
+        <div className="justify-content flex flex-col items-center space-y-2">
+          <div className="flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white p-1.5 shadow-lg ring-4 ring-purple-400/70 ring-offset-8 ring-offset-purple-200 duration-500 hover:scale-125 hover:shadow-gray-400 dark:bg-gray-700 dark:hover:shadow-gray-600">
+            <h4 className="font-lora text-2xl font-extrabold">20+</h4>
           </div>
-          <p className="capitalize text-md font-medium pt-3">completed</p>
-          <p className="text-orange-400 text-lg">Projects</p>
+          <p className="text-md pt-3 font-medium capitalize">completed</p>
+          <p className="text-lg text-orange-400">Projects</p>
         </div>
 
-        <div className="flex flex-col justify-content items-center space-y-2">
-          <div className="h-16 w-16 ring-4 ring-purple-400/70 ring-offset-8 ring-offset-purple-200 flex justify-center items-center rounded-full dark:bg-gray-700 bg-white shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-600 hover:scale-125 duration-500 cursor-pointer p-1.5">
-            <h4 className="text-2xl font-extrabold font-lora">2+</h4>
+        <div className="justify-content flex flex-col items-center space-y-2">
+          <div className="flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white p-1.5 shadow-lg ring-4 ring-purple-400/70 ring-offset-8 ring-offset-purple-200 duration-500 hover:scale-125 hover:shadow-gray-400 dark:bg-gray-700 dark:hover:shadow-gray-600">
+            <h4 className="font-lora text-2xl font-extrabold">2+</h4>
           </div>
-          <p className="capitalize text-md font-medium pt-3">companies</p>
-          <p className="text-orange-400 text-lg">Work</p>
+          <p className="text-md pt-3 font-medium capitalize">companies</p>
+          <p className="text-lg text-orange-400">Work</p>
         </div>
       </div>
 

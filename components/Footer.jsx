@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="mt-[45rem] md:mt-10 lg:mt-0 relative">
+    <footer className="relative mt-[45rem] md:mt-10 lg:mt-0">
       <div className="">
         <div className="relative">
           <Image
@@ -25,20 +25,20 @@ const Footer = () => {
         <div className="absolute bottom-0 left-0 animate-pulse opacity-100">
           <Image className="absolute" height="300" src={footerShape1} alt="" />
         </div>
-        <div className="absolute bottom-0 left-0 animate-pulse duration-[5000] opacity-100">
+        <div className="absolute bottom-0 left-0 animate-pulse opacity-100 duration-[5000]">
           <Image className="absolute" height="300" src={footerShape2} alt="" />
         </div>
       </div>
-      <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-2 md:space-y-5">
+      <div className="absolute top-2/3 left-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center space-y-2 md:space-y-5">
         <div className="flex space-x-5 md:space-x-10">
-          <FaGithubSquare className="text-white hover:text-black text-lg sm:text-xl md:text-3xl lg:text-4xl cursor-pointer" />
-          <FaLinkedin className="text-white hover:text-blue-500 text-lg sm:text-xl md:text-3xl lg:text-4xl cursor-pointer" />
-          <FaFacebookSquare className="text-white hover:text-blue-700 text-lg sm:text-xl md:text-3xl lg:text-4xl cursor-pointer" />
-          <FaInstagramSquare className="text-white hover:text-pink-600 text-lg sm:text-xl md:text-3xl lg:text-4xl cursor-pointer" />
+          <FaGithubSquare className="cursor-pointer text-lg text-white hover:text-black sm:text-xl md:text-3xl lg:text-4xl" />
+          <FaLinkedin className="cursor-pointer text-lg text-white hover:text-blue-500 sm:text-xl md:text-3xl lg:text-4xl" />
+          <FaFacebookSquare className="cursor-pointer text-lg text-white hover:text-blue-700 sm:text-xl md:text-3xl lg:text-4xl" />
+          <FaInstagramSquare className="cursor-pointer text-lg text-white hover:text-pink-600 sm:text-xl md:text-3xl lg:text-4xl" />
         </div>
-        <h4 className="text-xs md:text-xl text-slate-00">
+        <h4 className="text-slate-00 text-xs md:text-xl">
           Develop by{" "}
-          <a className="underline decoration-sky-500 text-rose900">
+          <a className="text-rose900 underline decoration-sky-500">
             Saddaul Siam
           </a>
         </h4>

@@ -16,19 +16,19 @@ const Toggle = () => {
     if (currentTheme === "dark") {
       return (
         <button
-          className="w-7 h-7 items-center justify-center flex border-2 border-orange-400 dark:border-orange-400 rounded-full"
+          className="flex h-7 w-7 items-center justify-center rounded-full border-2 border-orange-400 dark:border-orange-400"
           onClick={() => setTheme("light")}
         >
-          <MdDarkMode className="p-0.5 text-orange-400 text-xl" />
+          <MdDarkMode className="p-0.5 text-xl text-orange-400" />
         </button>
       );
     } else {
       return (
         <button
-          className="w-7 h-7 items-center justify-center flex border-2 border-orange-400 dark:border-orange-400 rounded-full"
+          className="flex h-7 w-7 items-center justify-center rounded-full border-2 border-orange-400 dark:border-orange-400"
           onClick={() => setTheme("dark")}
         >
-          <FaSun className="p-0.5 text-orange-400 text-xl" />
+          <FaSun className="p-0.5 text-xl text-orange-400" />
         </button>
       );
     }

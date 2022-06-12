@@ -10,14 +10,13 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="h-screen container md:pl-5 xl:mx-auto mt-24 md:py-20 relative md:-scroll-mt-16 lg:scroll-mt-0"
+      className="container relative mt-24 h-screen md:-scroll-mt-16 md:py-20 md:pl-5 lg:scroll-mt-0 xl:mx-auto"
     >
-      <h2 className="text-3xl md:text-5xl font-bold font-lora text-orange-400 text-center pb-20">
+      <h2 className="pb-20 text-center font-lora text-3xl font-bold text-orange-400 md:text-5xl">
         Contact With Me
       </h2>
-      <div className="grid grid-cols-5 gap-y-3 md:gap-x-44 lg:gap-x-5 w-screen md:w-full px-5 md:px-0">
-
-        <div className="col-span-5 md:col-span-2 w-full md:w-auto shadow-md border border-gray-200 dark:border-gray-600 bg-gray-100/40 dark:bg-gray-800/70 space-y-5 mx-auto p-5">
+      <div className="grid w-screen grid-cols-5 gap-y-3 px-5 md:w-full md:gap-x-44 md:px-0 lg:gap-x-5">
+        <div className="col-span-5 mx-auto w-full space-y-5 border border-gray-200 bg-gray-100/40 p-5 shadow-md dark:border-gray-600 dark:bg-gray-800/70 md:col-span-2 md:w-auto">
           <div className="">
             <Image
               width={400}
@@ -27,7 +26,7 @@ const ContactMe = () => {
             />
           </div>
           <div className="space-y-2">
-            <h1 className="text-5xl font-bold font-lora text-orange-400 pb-5">
+            <h1 className="pb-5 font-lora text-5xl font-bold text-orange-400">
               Saddaul Siam
             </h1>
             <p className="text-lg text-gray-800 dark:text-gray-300">
@@ -45,20 +44,20 @@ const ContactMe = () => {
           </div>
           {/* social icons */}
           <div className="pt-3">
-            <p className="py-5 text-lg text-gray-800 font-medium dark:text-gray-300">
+            <p className="py-5 text-lg font-medium text-gray-800 dark:text-gray-300">
               Find with me
             </p>
             <div className=" flex space-x-10">
-              <FaGithubSquare className="text-orange-400 hover:text-black dark:hover:text-white text-5xl cursor-pointer" />
-              <FaLinkedin className="text-orange-400 hover:text-blue-500 text-5xl cursor-pointer" />
-              <FaFacebookSquare className="text-orange-400 hover:text-blue-700 text-5xl cursor-pointer" />
-              <FaInstagramSquare className="text-orange-400 hover:text-pink-600 text-5xl cursor-pointer" />
+              <FaGithubSquare className="cursor-pointer text-5xl text-orange-400 hover:text-black dark:hover:text-white" />
+              <FaLinkedin className="cursor-pointer text-5xl text-orange-400 hover:text-blue-500" />
+              <FaFacebookSquare className="cursor-pointer text-5xl text-orange-400 hover:text-blue-700" />
+              <FaInstagramSquare className="cursor-pointer text-5xl text-orange-400 hover:text-pink-600" />
             </div>
           </div>
         </div>
 
-        <div className="col-span-5 md:col-span-3 w-full border border-gray-200 dark:border-gray-600 md:w-11/12 xl:w-10/12 shadow-md bg-gray-100/40 dark:bg-gray-800/70">
-          <div className="p-5 space-y-5 ">
+        <div className="col-span-5 w-full border border-gray-200 bg-gray-100/40 shadow-md dark:border-gray-600 dark:bg-gray-800/70 md:col-span-3 md:w-11/12 xl:w-10/12">
+          <div className="space-y-5 p-5 ">
             <div className="grid grid-cols-2 space-y-5 md:space-y-0">
               <div className="col-span-2 md:col-span-1 md:mr-5">
                 <label
@@ -71,7 +70,7 @@ const ContactMe = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="border-2 dark:border-gray-500 dark:bg-gray-700/50 outline-blue-400 h-14 w-full px-2 rounded-md"
+                  className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
                 />
               </div>
               <div className="col-span-2 md:col-span-1">
@@ -85,7 +84,7 @@ const ContactMe = () => {
                 <input
                   type="text"
                   placeholder="Your Number"
-                  className="border-2 dark:border-gray-500 dark:bg-gray-700/50 outline-blue-400 h-14 w-full px-2 rounded-md"
+                  className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
                 />
               </div>
             </div>
@@ -99,7 +98,7 @@ const ContactMe = () => {
               <input
                 type="text"
                 placeholder="Your Email"
-                className="border-2 dark:border-gray-500 dark:bg-gray-700/50 outline-blue-400 w-full h-14 px-2 rounded-md"
+                className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
               />
             </div>
             <div className="">
@@ -112,7 +111,7 @@ const ContactMe = () => {
               <input
                 type="text"
                 placeholder="Subject"
-                className="border-2 dark:border-gray-500 dark:bg-gray-700/50 outline-blue-400 w-full h-14 px-2 rounded-md"
+                className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
               />
             </div>
             <div className="">
@@ -125,12 +124,11 @@ const ContactMe = () => {
               <textarea
                 type="text"
                 placeholder="Your Message"
-                className="border-2 dark:border-gray-500 dark:bg-gray-700/50 outline-blue-400 w-full h-60 p-2 resize-none rounded-md"
+                className="h-60 w-full resize-none rounded-md border-2 p-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
               />
             </div>
           </div>
         </div>
-
       </div>
       {/* <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute top-0 left-0 bg-pink-200/30 dark:bg-cyan-200/30 "></div>
       <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute bottom-0 right-0 dark:bg-pink-200/20 bg-cyan-200/30 "></div> */}

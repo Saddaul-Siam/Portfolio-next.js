@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const SkillsIcons = ({ skill }) => {
   return (
-    <div className="flex flex-col justify-content items-center space-y-4">
-      <div className="h-12 w-12 md:h-14 md:w-14 rounded-full dark:bg-gray-700 bg-white shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-600 hover:scale-125 duration-500 cursor-pointer p-1.5">
+    <div className="justify-content flex flex-col items-center space-y-4">
+      <div className="h-12 w-12 cursor-pointer rounded-full bg-white p-1.5 shadow-lg duration-500 hover:scale-125 hover:shadow-gray-400 dark:bg-gray-700 dark:hover:shadow-gray-600 md:h-14 md:w-14">
         <Image
           className="rounded-full"
           height={100}
@@ -12,7 +12,7 @@ const SkillsIcons = ({ skill }) => {
           alt=""
         />
       </div>
-      <p className="capitalize text-md font-medium">{skill?.title}</p>
+      <p className="text-md font-medium capitalize">{skill?.title}</p>
     </div>
   );
 };

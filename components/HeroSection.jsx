@@ -60,8 +60,8 @@ const HeroSection = () => {
             </div>
           </div>
           {/* blur div */}
-          {/* <div className="absolute z-10 h-80 w-96 animate-pulse rounded-full bg-pink-200 blur-3xl dark:bg-pink-200/30 md:-top-20 md:-right-40"></div>
-          <div className="absolute -bottom-52 -left-40 -z-0 hidden h-80 w-96 animate-pulse rounded-full bg-cyan-200 blur-3xl dark:bg-cyan-200/30 md:block"></div> */}
+          <div className="absolute z-10 hidden h-80 w-96 animate-pulse rounded-full bg-pink-200 blur-3xl dark:bg-pink-200/30 lg:-top-20 lg:right-0 lg:block"></div>
+          <div className="absolute -bottom-52 -left-40 -z-0  hidden h-80 w-96 animate-pulse rounded-full bg-cyan-200 blur-3xl dark:bg-cyan-200/30  md:block"></div>
 
           <div className="absolute top-14 -left-4 hidden md:-top-20 md:-left-20 md:block ">
             <Image src={glasses} alt="" className="" />

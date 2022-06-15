@@ -108,8 +108,8 @@ const SkillsAndExperience = () => {
       </div>
 
       {/* Shadow div */}
-      {/* <div className="-bottom-96 left-0 right-0 md:top-28 md:left-28 md:dark:block animate-pulse blur-3xl w-96 h-80 rounded-full absolute bg-cyan-200/50 dark:bg-pink-200/30 z-0"></div>
-      <div className="hidden md:block bottom-56 right-0 dark:block animate-pulse blur-3xl w-96 h-80 rounded-full absolute bg-pink-200/50 dark:bg-pink-200/30  md:dark:bg-cyan-200/20 z-0"></div> */}
+      <div className="hidden md:block -bottom-96 left-0 right-0 md:top-28 md:left-28 md:dark:block animate-pulse blur-3xl w-96 h-80 rounded-full absolute bg-cyan-200/50 dark:bg-pink-200/30 z-0"></div>
+      <div className="hidden md:block bottom-56 right-0 dark:block animate-pulse blur-3xl w-96 h-80 rounded-full absolute bg-pink-200/50 dark:bg-pink-200/30  md:dark:bg-cyan-200/20 z-0"></div>
     </section>
   );
 };

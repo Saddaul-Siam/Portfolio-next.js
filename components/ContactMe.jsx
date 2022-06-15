@@ -124,14 +124,14 @@ const ContactMe = () => {
               <textarea
                 type="text"
                 placeholder="Your Message"
-                className="h-60 w-full resize-none rounded-md border-2 p-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
+                className="textarea h-60 w-full resize-none rounded-md border-2 p-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
               />
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute top-0 left-0 bg-pink-200/30 dark:bg-cyan-200/30 "></div>
-      <div className="animate-pulse blur-3xl w-96 h-80 rounded-full absolute bottom-0 right-0 dark:bg-pink-200/20 bg-cyan-200/30 "></div> */}
+      <div className="absolute top-0 left-0 hidden h-80 w-96 animate-pulse rounded-full bg-pink-200/30 blur-3xl dark:bg-cyan-200/30 md:block "></div>
+      <div className="absolute bottom-0 right-0 hidden h-80 w-96 animate-pulse rounded-full bg-cyan-200/30 blur-3xl dark:bg-pink-200/20 md:block "></div>
     </section>
   );
 };

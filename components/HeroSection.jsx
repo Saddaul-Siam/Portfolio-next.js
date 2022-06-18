@@ -26,15 +26,43 @@ const HeroSection = () => {
             Frontend Developer with high level of experience in web designing
             and development, producting the Quality work
           </p>
-          <button color="inherit" className="button">
-            Hire me
-          </button>
+          <div>
+            <a href="#contact">
+              <button color="inherit" className="button">
+                Hire me
+              </button>
+            </a>
+          </div>
           {/* social icons */}
           <div className="flex space-x-10 pt-20">
-            <FaGithubSquare className="cursor-pointer text-5xl text-orange-400 hover:text-black dark:hover:text-white" />
-            <FaLinkedin className="cursor-pointer text-5xl text-orange-400 hover:text-blue-500" />
-            <FaFacebookSquare className="cursor-pointer text-5xl text-orange-400 hover:text-blue-700" />
-            <FaInstagramSquare className="cursor-pointer text-5xl text-orange-400 hover:text-pink-600" />
+            <a
+              href="https://github.com/Saddaul-Siam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithubSquare className="cursor-pointer text-5xl text-orange-400 hover:text-black dark:hover:text-white" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/saddaul-siam/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="cursor-pointer text-5xl text-orange-400 hover:text-blue-500" />
+            </a>
+            <a
+              href="https://www.facebook.com/saddaulsiam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookSquare className="cursor-pointer text-5xl text-orange-400 hover:text-blue-700" />
+            </a>
+            <a
+              href="https://www.instagram.com/saddaul.siam/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagramSquare className="cursor-pointer text-5xl text-orange-400 hover:text-pink-600" />
+            </a>
           </div>
         </div>
         <div className="relative flex-1 pt-32 md:pt-0">

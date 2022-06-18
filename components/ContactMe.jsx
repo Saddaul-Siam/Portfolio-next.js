@@ -47,11 +47,35 @@ const ContactMe = () => {
             <p className="py-5 text-lg font-medium text-gray-800 dark:text-gray-300">
               Find with me
             </p>
-            <div className=" flex space-x-10">
-              <FaGithubSquare className="cursor-pointer text-5xl text-orange-400 hover:text-black dark:hover:text-white" />
-              <FaLinkedin className="cursor-pointer text-5xl text-orange-400 hover:text-blue-500" />
-              <FaFacebookSquare className="cursor-pointer text-5xl text-orange-400 hover:text-blue-700" />
-              <FaInstagramSquare className="cursor-pointer text-5xl text-orange-400 hover:text-pink-600" />
+            <div className="flex space-x-10">
+              <a
+                href="https://github.com/Saddaul-Siam"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithubSquare className="cursor-pointer text-5xl text-orange-400 hover:text-black dark:hover:text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saddaul-siam/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="cursor-pointer text-5xl text-orange-400 hover:text-blue-500" />
+              </a>
+              <a
+                href="https://www.facebook.com/saddaulsiam"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookSquare className="cursor-pointer text-5xl text-orange-400 hover:text-blue-700" />
+              </a>
+              <a
+                href="https://www.instagram.com/saddaul.siam/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagramSquare className="cursor-pointer text-5xl text-orange-400 hover:text-pink-600" />
+              </a>
             </div>
           </div>
         </div>

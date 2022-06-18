@@ -63,11 +63,9 @@ const Services = () => {
           <div className="top-48 z-40 h-auto w-[90vw] rounded-2xl border-4 border-orange-400 p-5 shadow-md shadow-orange-400/50 dark:border-2 md:flex md:h-72 md:w-[95vw] md:justify-around xl:absolute xl:-right-14 xl:w-60 xl:flex-col 2xl:right-[115px]">
             <Image className="" src={fontEnd} width={300} height={200} alt="" />
             <div className="flex flex-col items-center justify-center space-y-3 ">
-              <h4 className="pt-3 font-lora text-xl font-semibold">
-                FontEnd Developer
-              </h4>
+              <h4 className="pt-3 font-lora text-xl font-semibold">FontEnd</h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
-                Html, Css, JavaScript, React
+                Html, Css, JavaScript, React, Next js 
               </p>
             </div>
           </div>
@@ -75,9 +73,7 @@ const Services = () => {
           <div className="bottom-0 z-50 h-auto w-[90vw]  rounded-2xl border-4 border-orange-400 p-5 shadow-md shadow-orange-400/50 dark:border-2 md:flex md:h-72 md:w-[95vw] md:justify-around xl:absolute xl:left-96 xl:w-60 xl:flex-col 2xl:bottom-40">
             <Image className="" src={backEnd} width={300} height={200} alt="" />
             <div className="flex flex-col items-center justify-center space-y-3 ">
-              <h4 className="pt-3 font-lora text-xl font-semibold">
-                BackEnd Developer
-              </h4>
+              <h4 className="pt-3 font-lora text-xl font-semibold">BackEnd</h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
                 Nodejs, Express, MongoDB, Mongoose
               </p>

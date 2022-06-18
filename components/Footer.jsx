@@ -31,10 +31,34 @@ const Footer = () => {
       </div>
       <div className="absolute top-2/3 left-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center space-y-2 md:space-y-5">
         <div className="flex space-x-5 md:space-x-10">
-          <FaGithubSquare className="cursor-pointer text-lg text-white hover:text-black sm:text-xl md:text-3xl lg:text-4xl" />
-          <FaLinkedin className="cursor-pointer text-lg text-white hover:text-blue-500 sm:text-xl md:text-3xl lg:text-4xl" />
-          <FaFacebookSquare className="cursor-pointer text-lg text-white hover:text-blue-700 sm:text-xl md:text-3xl lg:text-4xl" />
-          <FaInstagramSquare className="cursor-pointer text-lg text-white hover:text-pink-600 sm:text-xl md:text-3xl lg:text-4xl" />
+          <a
+            href="https://github.com/Saddaul-Siam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithubSquare className="cursor-pointer text-lg text-white hover:text-black sm:text-xl md:text-3xl lg:text-4xl" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saddaul-siam/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="cursor-pointer text-lg text-white hover:text-blue-500 sm:text-xl md:text-3xl lg:text-4xl" />
+          </a>
+          <a
+            href="https://www.facebook.com/saddaulsiam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookSquare className="cursor-pointer text-lg text-white hover:text-blue-700 sm:text-xl md:text-3xl lg:text-4xl" />
+          </a>
+          <a
+            href="https://www.instagram.com/saddaul.siam/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagramSquare className="cursor-pointer text-lg text-white hover:text-pink-600 sm:text-xl md:text-3xl lg:text-4xl" />
+          </a>
         </div>
         <h4 className="text-slate-00 text-xs md:text-xl">
           Develop by{" "}

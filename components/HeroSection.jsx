@@ -38,18 +38,18 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="relative flex-1 pt-32 md:pt-0">
-          <div className="lg:top[-9%] absolute left-0 right-0 top-52 md:left-[-15%] md:top-[5%] ">
+          <div className="lg:top[-9%] absolute left-0 right-0 top-52 md:left-[-15%] md:top-[5%]">
             <Image src={Vector1} className="z-20 scale-[0.70]" alt="" />
           </div>
-          <div className="absolute left-0 right-0 top-48 md:left-[-3rem] md:top-[1rem] lg:top-[-4.6rem] ">
+          <div className="absolute left-0 right-0 top-48 md:left-[-3rem] md:top-[1rem] lg:top-0 ">
             <Image src={Vector2} className="z-30 scale-[0.68]" alt="" />
           </div>
 
-          <div className="">
+          <div>
             <div className="absolute top-28 left-16 right-0 md:hidden">
               <Image src={boy} className="z-40 scale-90" alt="" />
             </div>
-            <div className="absolute hidden md:top-0 md:left-[20%] md:-bottom-20 md:block ">
+            <div className="absolute hidden md:top-0 md:left-[20%] md:block lg:-top-10 xl:top-0 2xl:top-10">
               <Image
                 src={boy}
                 width={400}
@@ -68,12 +68,12 @@ const HeroSection = () => {
             {/* <Image src={glassesimoji} alt="" className="scale-75" /> */}
           </div>
 
-          <div className="absolute top-10 -right-5 z-50 flex h-20 w-44 items-center justify-start rounded-3xl bg-white md:-top-24 md:right-0 md:h-24 md:w-48 lg:w-64">
+          <div className="absolute top-10 -right-5 z-50 flex h-20 w-44 items-center justify-start rounded-3xl bg-white md:-top-24 md:right-0 md:h-24 md:w-48 lg:w-64 xl:-top-14 2xl:-top-10 ">
             <Image src={crown} alt="" className="scale-50" />
             <span className="text-lg text-gray-600">Web Developer</span>
           </div>
 
-          <div className="absolute -bottom-[28rem] left-0 z-50 flex h-20 w-44 items-center justify-start rounded-3xl bg-white md:bottom-12 md:-left-8 md:h-24 md:w-48 lg:w-64 ">
+          <div className="absolute -bottom-[28rem] left-0 z-50 flex h-20 w-44 items-center justify-start rounded-3xl bg-white md:bottom-[4.7rem] md:-left-8 md:h-24 md:w-48 lg:-bottom-6 lg:-left-10 lg:w-64 xl:-bottom-24 xl:-left-3 2xl:-bottom-36 2xl:left-4">
             <Image src={thumbup} alt="" className="scale-50 " />
             <span className="text-lg text-gray-600">Web Designer</span>
           </div>

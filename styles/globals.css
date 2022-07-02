@@ -62,3 +62,22 @@
     @apply rounded-3xl bg-orange-400 px-6 py-1.5 text-[16px]	normal-case text-white shadow-lg shadow-orange-400 ring-1 ring-orange-400 hover:bg-white hover:text-orange-400;
   }
 }
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#64FFDA, #64FFDA);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#64FFDA, #64FFDA);
+}
+
+.link-underline:hover {
+  background-size: 100% 2px;
+  background-position: 0 100%;
+}

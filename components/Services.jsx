@@ -21,9 +21,11 @@ const Services = () => {
               Services
             </h2>
             <p className="text-md font-medium text-gray-600 dark:text-gray-400">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-              ipsam impedit in, sapiente laudantium, totam placeat iste
-              excepturi labore tenetur repellat consectetur
+              I’m a Front End Web developer who is passionate about making
+              error-free websites with 100% client satisfaction. I love to solve
+              real-world problems. I am strategic, goal-oriented, and always
+              work with an end goal in mind. I pride myself on doing quality
+              work. Most of the time I work with JavaScript ReactJS
             </p>
             <div className="pt-10">
               <a
@@ -65,7 +67,7 @@ const Services = () => {
             <div className="flex flex-col items-center justify-center space-y-3 ">
               <h4 className="pt-3 font-lora text-xl font-semibold">FontEnd</h4>
               <p className="font-lora text-gray-600 dark:text-gray-400">
-                Html, Css, JavaScript, React, Next js 
+                Html, Css, JavaScript, React, Next js
               </p>
             </div>
           </div>

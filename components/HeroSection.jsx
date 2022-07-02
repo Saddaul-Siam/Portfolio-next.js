@@ -23,8 +23,11 @@ const HeroSection = () => {
             Saddaul Siam
           </h1>
           <p className="text-lg font-medium text-gray-600 dark:text-gray-400 md:w-9/12">
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            {/* Frontend Developer with high level of experience in web designing
+            and development, producting the Quality work */}
+            I am Saddaul Siam. Being interested to explore technologies I found
+            web development as my passion. I am aspiring to bring that passion
+            to a full-time role.
           </p>
           <div>
             <a href="#contact">

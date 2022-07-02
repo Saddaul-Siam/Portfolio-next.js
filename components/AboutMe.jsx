@@ -26,13 +26,36 @@ const AboutMe = () => {
             I’m Saddaul Siam and I’m a
             <span className="text-orange-400"> Frontend Developer</span>
           </h2>
-          <p className="font-lora text-xl">
-            I’m a Front End Web developer who is passionate about making
+          <p className="font-lora text-lg font-medium text-gray-600 dark:text-gray-400">
+            {/* I’m a Front End Web developer who is passionate about making
             error-free websites with 100% client satisfaction. I love to solve
             real-world problems. I am strategic, goal-oriented, and always work
             with an end goal in mind. I pride myself on doing quality work and
             maintaining excellent communication. Most of the time I work with
-            JavaScript ReactJS
+            JavaScript ReactJS */}
+            I’m from Pabna Bangladesh. I’m currently pursuing a Diploma in
+            computer science and engineering from{" "}
+            <a
+              href="http://ppi.pabna.gov.bd/"
+              target="_blank"
+              rel="noreferrer"
+              className="link link-underline link-underline-black text-[#64FFDA]"
+            >
+              {" "}
+              Pabna Polytechnic Institute
+            </a>{" "}
+            , Pabna.
+            <br />
+            <br />
+            I have learned last two years a few web-related technologies and
+            programming languages like HTML, CSS, Bootstrap, JavaScript,
+            React.js, MaterialUI,Node Expresss.js , MongoDB, and firebase
+            Authentication system.
+            <br />
+            <br />
+            While in love with JavaScript, my preference is to learn and adapt
+            to popular frameworks, libraries, and packages in order to keep pace
+            with the changing web environment.
           </p>
           <div className="pt-10">
             <a

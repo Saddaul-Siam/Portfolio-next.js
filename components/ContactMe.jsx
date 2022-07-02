@@ -31,13 +31,13 @@ const ContactMe = () => {
             </h1>
             <p className="text-lg text-gray-800 dark:text-gray-300">
               <span className="text-xl font-medium text-gray-700 dark:text-white">
-                Phone:
+                Phone:{" "}
               </span>
               +8801311333277
             </p>
             <p className="text-lg text-gray-800 dark:text-gray-300">
               <span className="text-xl font-medium text-gray-700 dark:text-white">
-                Email:
+                Email:{" "}
               </span>
               saddaulsiam@gmail.com
             </p>

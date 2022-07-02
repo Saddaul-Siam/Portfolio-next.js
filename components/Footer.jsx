@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
         <h4 className="text-slate-00 text-xs md:text-xl">
           Develop by{" "}
-          <a className="text-rose900 underline decoration-sky-500">
+          <a className="text-[#64FFDA] underline-offset-2 underline decoration-[#64FFDA]">
             Saddaul Siam
           </a>
         </h4>

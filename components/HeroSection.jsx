@@ -37,7 +37,7 @@ const HeroSection = () => {
             </a>
           </div>
           {/* social icons */}
-          <div className="flex space-x-10 pt-20">
+          <div className="flex space-x-5 pt-20 md:space-x-10">
             <a
               href="https://github.com/Saddaul-Siam"
               target="_blank"
@@ -104,7 +104,7 @@ const HeroSection = () => {
             <span className="text-lg text-gray-600">Web Developer</span>
           </div>
 
-          <div className="absolute -bottom-[28rem] left-0 z-50 flex h-20 w-44 items-center justify-start rounded-3xl bg-white md:bottom-[4.7rem] md:-left-8 md:h-24 md:w-48 lg:-bottom-6 lg:-left-10 lg:w-64 xl:-bottom-24 xl:-left-3 2xl:-bottom-36 2xl:left-4">
+          <div className="absolute -bottom-[28rem] left-0 z-50 flex h-20 w-44 items-center justify-start rounded-3xl bg-white md:bottom-[8.5rem] md:-left-8 md:h-24 md:w-48 lg:bottom-0 lg:-left-10 lg:w-64 xl:-bottom-16 xl:-left-3 2xl:-bottom-28 2xl:left-4">
             <Image src={thumbup} alt="" className="scale-50 " />
             <span className="text-lg text-gray-600">Web Designer</span>
           </div>

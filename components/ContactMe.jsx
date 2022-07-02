@@ -47,7 +47,7 @@ const ContactMe = () => {
             <p className="py-5 text-lg font-medium text-gray-800 dark:text-gray-300">
               Find with me
             </p>
-            <div className="flex space-x-10">
+            <div className="flex space-x-5 md:space-x-10">
               <a
                 href="https://github.com/Saddaul-Siam"
                 target="_blank"

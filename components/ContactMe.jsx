@@ -1,4 +1,7 @@
+import React, { useRef } from "react";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -7,6 +10,33 @@ import {
 } from "react-icons/fa";
 
 const ContactMe = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_olsyzbs",
+        "template_ga89sks",
+        e.target,
+        "user_zY9PhOZfd0w62teBhlcuR"
+      )
+      .then(
+        (result) => {
+          if (result.text) {
+            alert("message send successfully");
+          }
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      )
+      .finally(() => {
+        e.target.reset();
+      });
+  };
   return (
     <section
       id="contact"
@@ -33,13 +63,17 @@ const ContactMe = () => {
               <span className="text-xl font-medium text-gray-700 dark:text-white">
                 Phone:{" "}
               </span>
-              +8801311333277
+              <span className="link link-underline link-underline-black hover:text-[#64FFDA]">
+                +8801311333277
+              </span>
             </p>
             <p className="text-lg text-gray-800 dark:text-gray-300">
               <span className="text-xl font-medium text-gray-700 dark:text-white">
                 Email:{" "}
+              </span>{" "}
+              <span className="link link-underline link-underline-black hover:text-[#64FFDA]">
+                saddaulsiam@gmail.com
               </span>
-              saddaulsiam@gmail.com
             </p>
           </div>
           {/* social icons */}
@@ -82,75 +116,93 @@ const ContactMe = () => {
 
         <div className="col-span-5 w-full border border-gray-200 bg-gray-100/40 shadow-md dark:border-gray-600 dark:bg-gray-800/70 md:col-span-3 md:w-11/12 xl:w-10/12">
           <div className="space-y-5 p-5 ">
-            <div className="grid grid-cols-2 space-y-5 md:space-y-0">
-              <div className="col-span-2 md:col-span-1 md:mr-5">
+            <form ref={form} onSubmit={sendEmail}>
+              <div className="mb-2 grid grid-cols-2 space-y-5 md:space-y-0">
+                <div className="col-span-2 md:col-span-1 md:mr-5">
+                  <label
+                    className="text-lg text-gray-800 dark:text-gray-100"
+                    htmlFor=""
+                  >
+                    Your Name
+                  </label>
+                  <br />
+                  <input
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="Your Name"
+                    className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
+                  />
+                </div>
+                <div className="col-span-2 md:col-span-1">
+                  <label
+                    className="text-lg text-gray-800 dark:text-gray-100"
+                    htmlFor=""
+                  >
+                    Phone Number
+                  </label>
+                  <br />
+                  <input
+                    name="phone"
+                    type="number"
+                    required
+                    placeholder="Your Number"
+                    className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
+                  />
+                </div>
+              </div>
+              <div className="mb-2">
                 <label
                   className="text-lg text-gray-800 dark:text-gray-100"
                   htmlFor=""
                 >
-                  Your Name
+                  Email
                 </label>
-                <br />
                 <input
-                  type="text"
-                  placeholder="Your Name"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Your Email"
                   className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
                 />
               </div>
-              <div className="col-span-2 md:col-span-1">
+              <div className="mb-2">
                 <label
                   className="text-lg text-gray-800 dark:text-gray-100"
                   htmlFor=""
                 >
-                  Phone Number
+                  Subject
                 </label>
-                <br />
                 <input
+                  name="subject"
                   type="text"
-                  placeholder="Your Number"
+                  required
+                  placeholder="Subject"
                   className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
                 />
               </div>
-            </div>
-            <div className="">
-              <label
-                className="text-lg text-gray-800 dark:text-gray-100"
-                htmlFor=""
+              <div className="mb-2">
+                <label
+                  className="text-lg text-gray-800 dark:text-gray-100"
+                  htmlFor=""
+                >
+                  Your Message
+                </label>
+                <textarea
+                  name="message"
+                  type="text"
+                  required
+                  placeholder="Your Message"
+                  className="textarea h-60 w-full resize-none rounded-md border-2 p-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
+                />
+              </div>
+              <button
+                type="onSubmit"
+                className="w-full rounded-md bg-slate-200 py-2 font-medium hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600"
               >
-                Email
-              </label>
-              <input
-                type="text"
-                placeholder="Your Email"
-                className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
-              />
-            </div>
-            <div className="">
-              <label
-                className="text-lg text-gray-800 dark:text-gray-100"
-                htmlFor=""
-              >
-                Subject
-              </label>
-              <input
-                type="text"
-                placeholder="Subject"
-                className="h-14 w-full rounded-md border-2 px-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
-              />
-            </div>
-            <div className="">
-              <label
-                className="text-lg text-gray-800 dark:text-gray-100"
-                htmlFor=""
-              >
-                Your Message
-              </label>
-              <textarea
-                type="text"
-                placeholder="Your Message"
-                className="textarea h-60 w-full resize-none rounded-md border-2 p-2 outline-blue-400 dark:border-gray-500 dark:bg-gray-700/50"
-              />
-            </div>
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>

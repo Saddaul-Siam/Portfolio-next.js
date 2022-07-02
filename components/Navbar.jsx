@@ -97,7 +97,7 @@ const Nav = () => {
             <li key={link.label} className="my-7 text-xl md:my-0 md:ml-8 ">
               <a
                 href={link.href}
-                className="text-gray-900 duration-500 hover:text-orange-400 dark:text-white dark:hover:text-orange-400"
+                className="link link-underline link-underline-black text-gray-900 duration-500 hover:text-orange-400 dark:text-white dark:hover:text-orange-400"
               >
                 {link.label}
               </a>

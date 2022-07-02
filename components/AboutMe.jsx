@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import img from "../img/aboutMe1.png";
+import Typical from "react-typical";
 
 const AboutMe = () => {
   return (
@@ -23,8 +24,26 @@ const AboutMe = () => {
         </div>
         <div className="lex col-span-2 flex-col justify-center space-y-10 md:col-span-1">
           <h2 className="font-lora text-3xl font-semibold">
-            I’m Saddaul Siam and I’m a
-            <span className="text-orange-400"> Frontend Developer</span>
+            I’m Saddaul Siam and I’m a{" "}
+            <span className="text-orange-400">
+              <Typical
+                loop={Infinity}
+                wrapper="span"
+                delay="1000"
+                steps={[
+                  "Web Developer",
+                  2000,
+                  "Web Designer",
+                  2000,
+                  "React Developer",
+                  2000,
+                  "Frontend Developer",
+                  2000,
+                  "Programmer",
+                  2000,
+                ]}
+              />
+            </span>
           </h2>
           <p className="font-lora text-lg font-medium text-gray-600 dark:text-gray-400">
             {/* I’m a Front End Web developer who is passionate about making

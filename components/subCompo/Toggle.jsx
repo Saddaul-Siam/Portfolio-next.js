@@ -19,7 +19,7 @@ const Toggle = () => {
           className="flex h-7 w-7 items-center justify-center rounded-full border-2 border-orange-400 dark:border-orange-400"
           onClick={() => setTheme("light")}
         >
-          <MdDarkMode className="p-0.5 text-xl text-orange-400" />
+          <FaSun className="p-0.5 text-xl text-orange-400" />
         </button>
       );
     } else {
@@ -28,7 +28,7 @@ const Toggle = () => {
           className="flex h-7 w-7 items-center justify-center rounded-full border-2 border-orange-400 dark:border-orange-400"
           onClick={() => setTheme("dark")}
         >
-          <FaSun className="p-0.5 text-xl text-orange-400" />
+          <MdDarkMode className="p-0.5 text-xl text-orange-400" />
         </button>
       );
     }
